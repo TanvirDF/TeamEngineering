@@ -1,4 +1,4 @@
-
+import logo from "../imgs/IMG_1184.png";
 
 const Header = () => {
   return (
@@ -6,11 +6,10 @@ const Header = () => {
     <header>
       <nav>
         <div>
-          <img src="IMG_1184.PNG" alt="DFX Logo" />
+          <img src={logo} alt="DFX Logo" width="50" height="50"/>
         </div>
       </nav>
     </header>
-   
   )
 
 }
