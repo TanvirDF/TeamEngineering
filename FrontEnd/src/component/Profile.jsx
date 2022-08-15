@@ -1,27 +1,23 @@
+import Story from './Story'
+
 const Profile = () => {
-    // return (
-    // <> className= ="Basic-info"
-    //     <div>
-    //         <h1>Your profile</h1>
-    //         <button type="submit" id="edit-button">Edit</button>
-    //         <p>Name: Nathan</p>
-    //         <p>Personal email: nathanfry98@gmail.com</p>
-    //         <p>Digital futures email: nathan@dfutures.com</p>
-    //         <p>Github: nate8998</p>
-    //         <p>Linkdin: nathan@linkden</p>
-    //         <p>Phone: 07872415240</p>
-    //         ssName="Summary"cla</div>
-    //     <div>
-    //         <
-    //     <div className="info-box">h2>Personal story summary:</h2>
-    //         <br />
-    //         <p>Degree in Chemistry</p>
-    //         <p>13 school qualifications</p>
-    //         <p>5 work experience</p>
-    //     </div>
-    //     <p>3 personal achievements</p>
-    // </div>
-    // </>
-    // )
+    return (
+        <div className="whole-component">
+            <div className="Basic-info">
+                <div className="title">
+                    <h1>Your profile</h1>
+                    <button type="submit" id="edit-button">Edit</button>
+                </div>
+                <p><strong>Name:</strong> Nathan</p>
+                <p><strong>Personal email:</strong> nathanfry98@gmail.com</p>
+                <p><strong>Digital futures email:</strong> nathan@dfutures.com</p>
+                <p><strong>Github:</strong> nate8998</p>
+                <p><strong>Linkdin:</strong> nathan@linkdin</p>
+                <p><strong>Phone:</strong> 07872415240</p>
+            </div>
+            <Story />
+        </div>
+
+    )
 }
 export default Profile
