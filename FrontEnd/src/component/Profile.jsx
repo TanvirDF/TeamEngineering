@@ -7,7 +7,7 @@ const Profile = () => {
                 <div className="title">
                     <h1>Your profile</h1>
                     <button type="submit" id="edit-button">Edit</button>
-                </div>
+                </div >
                 <p><strong>Name:</strong> Nathan</p>
                 <p><strong>Personal email:</strong> nathanfry98@gmail.com</p>
                 <p><strong>Digital futures email:</strong> nathan@dfutures.com</p>
