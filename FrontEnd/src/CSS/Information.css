@@ -1,0 +1,82 @@
+.profile-container {
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 2%;
+}
+
+.info-container {
+    /* border-style: solid; */
+    border-color: black;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 2%; */
+}
+
+.badge-container {
+    /* border-style: solid; */
+    border-color: black;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+    /* width: 25%; */
+}
+
+
+.badge-holder {
+    /* border-style: solid; */
+    border-color: black;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    /* margin-left: 2%; */
+    /* width: 50%; */
+    /* margin-right: 2%; */
+}
+
+h3 {
+    margin: 0%;
+    word-wrap: break-word;
+}
+
+.holder {
+    /* border-style: solid; */
+    border-color: black;
+    margin-left: 10%;
+}
+
+.badge {
+    border-style: solid;
+    border-color: black;
+    /* margin-left: 2%; */
+    /* margin-right: 2%; */
+    /* margin-top: 5%; */
+    margin-bottom: 15%;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 10%;
+    /* width: 50%; */
+}
+
+.label {
+    margin-top: 80px;
+}
+
+.scrollBox {
+    border-style: solid;
+    border-color: black;
+    overflow: scroll;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    margin-left: 8%;
+}
+
+.score-container {
+    display: flex;
+    flex-direction: row;
+
+}
