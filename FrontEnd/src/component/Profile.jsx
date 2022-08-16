@@ -12,7 +12,7 @@ const Profile = () => {
                 <p><strong>Personal email:</strong> nathanfry98@gmail.com</p>
                 <p><strong>Digital futures email:</strong> nathan@dfutures.com</p>
                 <p><strong>Github:</strong> nate8998</p>
-                <p><strong>Linkdin:</strong> nathan@linkdin</p>
+                <p><strong>Linkedin:</strong> nathan@linkedin</p>
                 <p><strong>Phone:</strong> 07872415240</p>
             </div>
             <Story />
