@@ -1,6 +1,6 @@
 const Story = () => {
     return (
-        <div className="quali">
+        <div className="quali" data-testId="story">
             <h3>Personal story summary:</h3>
             <br />
             <div className="info-box">

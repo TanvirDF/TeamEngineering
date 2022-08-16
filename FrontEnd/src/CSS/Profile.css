@@ -1,17 +1,19 @@
 .whole-component {
     display: flex;
     flex-direction: row;
-    width: auto;
+    min-width: auto;
     border: 7px solid rgb(0, 0, 0);
-    padding: 50px;
+    padding: 5%;
     margin: 20px;
-    gap: 50px;
+    gap: 30%;
 }
 
 .Basic-info {
     display: flex;
     flex-direction: column;
-    line-height: 5px;
+    line-height: 80%;
+    min-width: 20%;
+
 }
 
 .info-box {
@@ -24,12 +26,16 @@
 
 button {
     align-self: inherit;
+    height: 70%;
 }
 
 .title {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    padding-bottom: 10%;
+
+
 }
 
 .quali {
