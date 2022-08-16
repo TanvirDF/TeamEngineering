@@ -5,23 +5,23 @@ import Header from './Components/Header'
 // import './App.css';
 // import editpi from './CSS/EditPI.css'
 // import profilecss from './CSS/Profile.css'
-import Information from "./component/Information";
-import Profile from "./component/Profile";
-import Training from './component/Training';
-import EditPI from './component/EditPI';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Homepage from './component/Homepage';
+import ProfilePage from './component/ProfilePage/ProfilePage';
 
 function App() {
   return (
-    <>
-
+    <Router>
       <Header />
-      <Information />
-      <Profile />
+      <Routes>
+        <>
+          <Route path='/' element={<Homepage />} />
+          <Route path='/profilepage' element={<ProfilePage />} />
 
-      <Training />
-      <EditPI />
+        </>
+      </Routes>
       <Footer />
-    </>
+    </Router>
   );
 }
 
