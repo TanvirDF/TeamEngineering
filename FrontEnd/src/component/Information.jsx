@@ -5,11 +5,13 @@ import '../CSS/Information.css';
 
 
 
-const Information = () => {
+const Information = ({ profileData }) => {
     return (
         <div className='profile-container'>
-            <ProfileBadge />
-            <ProfileScore />
+            {profileData.map((eachItem, index) => (
+                <ProfileBadge key={index} badgeName={eachItem.badges.badgeName} />
+                // <ProfileScore />
+            ))}
         </div>
     );
 }

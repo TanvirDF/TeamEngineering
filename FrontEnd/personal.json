@@ -1,0 +1,39 @@
+{
+    "info": {
+        "data": [
+            {
+                "id": "2345",
+                "badges": {
+                    "badgeName": "name1",
+                    "badgeDescription": "ABC1"
+                },
+                "scores": [
+                    "strings"
+                ],
+                "video": "something.com"
+            },
+            {
+                "id": "5467",
+                "badges": {
+                    "badgeName": "name2",
+                    "badgeDescription": "ABC2"
+                },
+                "scores": [
+                    "strings"
+                ],
+                "video": "something.com"
+            },
+            {
+                "id": "8907",
+                "badges": {
+                    "badgeName": "name3",
+                    "badgeDescription": "ABC3"
+                },
+                "scores": [
+                    "strings"
+                ],
+                "video": "something.com"
+            }
+        ]
+    }
+}

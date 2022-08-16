@@ -3,32 +3,32 @@ import React from 'react';
 
 
 
-const ProfileBadge = () => {
+const ProfileBadge = ({ badgeName }) => {
     return (
         <div className='info-container'>
             <div><h1>Your Information</h1></div>
             <div className='badge-container'>
-                <div><h3>Badges:</h3></div>
+                <div className='h3'><h3>Badges:</h3></div>
                 <div className='badge-holder'>
                     <div className='holder'>
                         <div className='badge'>
-                            <h2>Badge A   </h2>
-                            xxxxx xxx x
+                            <h2>{badgeName}  </h2>
+                            <p>xxxxx xxx x</p>
                         </div>
-                        <div className='badge'>
+                        {/* <div className='badge'>
                             <h2>Badge A   </h2>
-                            xxxxx xxx x
+                            <p>xxxxx xxx x</p>
                         </div>
                     </div>
                     <div className='holder'>
                         <div className='badge'>
                             <h2>Badge A   </h2>
-                            xxxxx xxx x
+                            <p>xxxxx xxx x</p>
                         </div>
                         <div className='badge'>
                             <h2>Badge A   </h2>
-                            xxxxx xxx x
-                        </div>
+                            <p>xxxxx xxx x</p>
+                        </div> */}
                     </div>
                 </div>
             </div>
