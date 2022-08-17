@@ -1,0 +1,42 @@
+{
+    "info": {
+        "data": [
+            {
+                "id": "2345",
+                "badges": {
+                    "badgeName": "name1",
+                    "badgeDescription": "ABC1"
+                },
+                "scores": {
+                    "Aptitude": "93%",
+                    "Java": "87"
+                },
+                "video": "something.com"
+            },
+            {
+                "id": "5467",
+                "badges": {
+                    "badgeName": "name2",
+                    "badgeDescription": "ABC2"
+                },
+                "scores": {
+                    "Aptitude": "58%",
+                    "Java": "78"
+                },
+                "video": "something.com"
+            },
+            {
+                "id": "8907",
+                "badges": {
+                    "badgeName": "name3",
+                    "badgeDescription": "ABC3"
+                },
+                "scores": {
+                    "Aptitude": "83%",
+                    "Java": "57"
+                },
+                "video": "something.com"
+            }
+        ]
+    }
+}
