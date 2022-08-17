@@ -1,3 +1,5 @@
+import '../CSS/EditPI.css'
+
 const EditPI = () => {
     return (
         <div className="Whole-editpi">
