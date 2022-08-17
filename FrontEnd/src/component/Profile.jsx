@@ -1,4 +1,6 @@
 import Story from './Story'
+import '../CSS/Profile.css'
+
 
 const Profile = () => {
     return (
