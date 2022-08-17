@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Homepage from './component/Homepage';
 import ProfilePage from './component/ProfilePage/ProfilePage';
 
+
 function App() {
   return (
     <Router>
