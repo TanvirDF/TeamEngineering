@@ -1,9 +1,17 @@
 import './App.css';
 import Footer from './Components/Footer';
 import Header from './Components/Header'
+
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import FullProfile from './component/FullProfile';
+
+import './CSS/Profile.css'
+import Information from "./component/Information";
+import Profile from "./component/Profile";
+import Training from './component/Training';
+import EditPI from './component/EditPI';
+
 
 function App() {
 
@@ -30,8 +38,13 @@ function App() {
 
   return (
     <>
+
       <Header />
+
       <FullProfile profileData={profileData} />
+
+      <EditPI />
+
       <Footer />
     </>
   );
