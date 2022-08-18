@@ -1,4 +1,4 @@
-import mongoose from 'mongoose'
+const mongoose = require("mongoose");
 
 const personalSchema = new mongoose.Schema({
   badges: {type: ["String"]},
@@ -12,4 +12,4 @@ const personalSchema = new mongoose.Schema({
 })
 
 const Personal = mongoose.model(`Personal`, personalSchema)
-export default Personal;
+module.exports = Personal;

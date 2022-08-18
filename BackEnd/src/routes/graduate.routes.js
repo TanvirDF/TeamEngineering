@@ -1,7 +1,9 @@
-import express from 'express'
-import Graduate from '../model/graduate.model.js'
+const express = require("express");
 
-export const router = express.Router()
+const Graduate = require("../model/graduate.model");
+
+const router = express.Router();
+
 
 router.route('/:id').get((req, res) => {
     const id = req.params.id
@@ -12,3 +14,6 @@ router.route('/:id').get((req, res) => {
 
 
 })
+
+
+module.exports = router;

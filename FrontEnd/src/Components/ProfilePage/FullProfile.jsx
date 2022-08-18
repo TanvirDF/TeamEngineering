@@ -1,7 +1,7 @@
 import React from 'react';
-import Information from './Information';
-import Profile from './Profile';
-import Training from './Training';
+import Information from '../HomePage/Information';
+import Profile from '../HomePage/Profile';
+import Training from '../Homepage/Training';
 
 
 

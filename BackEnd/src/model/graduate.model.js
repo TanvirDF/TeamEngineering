@@ -1,4 +1,4 @@
-import mongoose from 'mongoose'
+const mongoose = require("mongoose");
 
 const graduatesSchema = new mongoose.Schema({
   id: { type: Number, required: true },
@@ -8,4 +8,5 @@ const graduatesSchema = new mongoose.Schema({
 })
 
 const Graduate = mongoose.model(`Graduate`, graduatesSchema);
-export default Graduate;
+
+module.exports = Graduate;

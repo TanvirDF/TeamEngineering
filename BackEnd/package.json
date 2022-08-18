@@ -1,22 +1,29 @@
 {
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "mongoose": "^6.5.2"
+    "mocha": "^10.0.0",
+    "mongoose": "^6.5.2",
+    "morgan": "^1.10.0"
   },
   "scripts": {
-    "start": "SET NODE_ENV=development&& nodemon server.js"
+    "start": "cross-env NODE_ENV=development nodemon server",
+    "test": "cross-env NODE_ENV=test mocha --timeout 5000 --exit",
+    "test:staging": "cross-env NODE_ENV=staging mocha --timeout 10000 --exit"
   },
   "name": "backend",
   "version": "1.0.0",
-  "type": "module",
+  "type": "commonjs",
   "main": "server.js",
   "directories": {
     "test": "tests"
   },
-  "devDependencies": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
 }

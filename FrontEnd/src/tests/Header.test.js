@@ -12,28 +12,28 @@ describe(`header tests`, () => {
         expect(screen.getByTestId("dfx-logo")).toBeInTheDocument();
     });
 
-    test(`That the Need Help link is rendered`, () => {
-        render(
-            <Header />
-        );
+    // test(`That the Need Help link is rendered`, () => {
+    //     render(
+    //         <Header />
+    //     );
 
-        expect(screen.getByTestId("need-help-link")).toBeInTheDocument();
-    });
+    //     expect(screen.getByTestId("need-help-link")).toBeInTheDocument();
+    // });
 
-    test(`That the Menu link is rendered`, () => {
-        render(
-            <Header />
-        );
+    // test(`That the Menu link is rendered`, () => {
+    //     render(
+    //         <Header />
+    //     );
 
-        expect(screen.getByTestId("menu-link")).toBeInTheDocument();
-    });
+    //     expect(screen.getByTestId("menu-link")).toBeInTheDocument();
+    // });
 
-    test(`That the profile picture is rendered`, () => {
-        render(
-            <Header />
-        );
+    // test(`That the profile picture is rendered`, () => {
+    //     render(
+    //         <Header />
+    //     );
 
-        expect(screen.getByTestId("profile-pic-nav")).toBeInTheDocument();
-    });
+    //     expect(screen.getByTestId("profile-pic-nav")).toBeInTheDocument();
+    // });
 
 });

@@ -1,6 +1,6 @@
-import express from 'express'
+const express = require("express");
 
-export const router = express.Router()
+const router = express.Router();
 
 router.route('/:id').get((req, res) => {
     const id = req.params.id
@@ -8,3 +8,5 @@ router.route('/:id').get((req, res) => {
 }).put((req, res) => {
 
 })
+
+module.exports = router;
