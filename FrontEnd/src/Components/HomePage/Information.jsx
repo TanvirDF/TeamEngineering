@@ -1,7 +1,7 @@
 import React from 'react';
 import ProfileBadge from './ProfileBadge';
 import ProfileScore from './ProfileScore';
-import '../../css/Information.css';
+import '../../CSS/Information.css';
 
 
 

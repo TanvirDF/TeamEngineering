@@ -1,10 +1,10 @@
 import './App.css';
-import Footer from './components/Footer';
-import Header from './components/Header'
+import Footer from '../src/Components/Footer.jsx';
+import Header from './Components/Header'
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Homepage from './components/HomePage/HomePage';
-import ProfilePage from './components/ProfilePage/ProfilePage';
+import Homepage from './Components/HomePage/HomePage';
+import ProfilePage from './Components/ProfilePage/ProfilePage';
 
 // import { useEffect, useState } from 'react';
 // import axios from 'axios';
@@ -13,27 +13,27 @@ import ProfilePage from './components/ProfilePage/ProfilePage';
 
 function App() {
 
-/*
-  const [profileData, setProfileData] = useState([]);
-
-
-  useEffect(() => {
-    getData();
-
-  }, []);
-
-
-  const getData = async () => {
-    try {
-      const res = await axios.get('http://localhost:3000/info');
-      setProfileData(res.data.data);
-      console.log(res.data.data);
+  /*
+    const [profileData, setProfileData] = useState([]);
+  
+  
+    useEffect(() => {
+      getData();
+  
+    }, []);
+  
+  
+    const getData = async () => {
+      try {
+        const res = await axios.get('http://localhost:3000/info');
+        setProfileData(res.data.data);
+        console.log(res.data.data);
+      }
+      catch (e) {
+        console.log(e);
+      }
     }
-    catch (e) {
-      console.log(e);
-    }
-  }
-  */
+    */
 
 
   return (
