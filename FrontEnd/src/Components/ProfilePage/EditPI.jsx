@@ -1,4 +1,4 @@
-import '../../CSS/EditPI.css'
+import '../../css/EditPI.css'
 
 const EditPI = () => {
     return (

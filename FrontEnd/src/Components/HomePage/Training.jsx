@@ -1,6 +1,6 @@
 import React from "react";
 import TrainingStory from "./TrainingStory";
-import '../../CSS/Training.css'
+import '../../css/Training.css'
 
 const Training = () => {
     return (

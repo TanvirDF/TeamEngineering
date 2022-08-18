@@ -1,3 +1,4 @@
+import React from 'react';
 import Profile from "./Profile";
 import Training from "./Training";
 import Information from "./Information";

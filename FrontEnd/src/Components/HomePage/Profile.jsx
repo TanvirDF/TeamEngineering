@@ -1,5 +1,5 @@
 import Story from './Story'
-import '../../CSS/Profile.css'
+import '../../css/Profile.css'
 
 
 const Profile = () => {

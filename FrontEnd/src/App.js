@@ -1,10 +1,10 @@
 import './App.css';
-import Footer from '../src/Components/Footer.jsx';
-import Header from './Components/Header'
+import Footer from '../src/components/Footer.jsx';
+import Header from '../src/components/Header.jsx'
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Homepage from './Components/HomePage/HomePage';
-import ProfilePage from './Components/ProfilePage/ProfilePage';
+import Homepage from './components/HomePage/HomePage.jsx';
+import ProfilePage from './components/ProfilePage/ProfilePage.jsx';
 
 // import { useEffect, useState } from 'react';
 // import axios from 'axios';
