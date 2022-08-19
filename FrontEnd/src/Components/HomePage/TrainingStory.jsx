@@ -1,7 +1,7 @@
 const TrainingStory = () => {
     return (
 
-        <div className="module-info">
+        <div className="module-info" data-testId="trainingstory">
             <p>Module 1, Challenge A: PASSED</p>
             <p>Module 1, Challenge B: PASSED</p>
             <p>Module 2, Challenge C: TODO</p>
