@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const userSchema = new mongoose.Schema({
+const graduateSchema = new mongoose.Schema({
   userId: {
     type: String,
     required: true,
@@ -49,6 +49,6 @@ const userSchema = new mongoose.Schema({
 });
 
 
-const User = mongoose.model(`User`, userSchema);
+const Graduate = mongoose.model(`Graduate`, graduateSchema);
 
-module.exports = User;
+module.exports = Graduate;

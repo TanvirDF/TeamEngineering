@@ -39,17 +39,17 @@ app.use('/profile', profileRouter)
 
 
 const server = app.listen(port, host, () => {
-    const SERVER_HOST = server.address().address;
-    const SERVER_PORT = server.address().port;
-    console.log(`Server is runnning on http://${SERVER_HOST}:${SERVER_PORT}`);
+  const SERVER_HOST = server.address().address;
+  const SERVER_PORT = server.address().port;
+  console.log(`Server is runnning on http://${SERVER_HOST}:${SERVER_PORT}`);
 });
 
 //Uses a utility function to check against the test .env, if it's not testing then it connects to DB
 if (!DBUtils.isTestEnv()) {
-    (async () => {
-      await DBUtils.connect(db);
-    })();
-  }
+  (async () => {
+    await DBUtils.connect(db);
+  })();
+}
 
 
 module.exports = server;
