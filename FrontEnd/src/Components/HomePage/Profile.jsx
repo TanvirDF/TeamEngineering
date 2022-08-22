@@ -7,8 +7,8 @@ const Profile = () => {
         <div className="whole-component">
             <div className="Basic-info">
                 <div className="title">
-                    {/* <h1>Your profile</h1>
-                    <button type="submit" id="edit-button">Edit</button> */}
+                    <h1>Your profile</h1>
+                    <button type="submit" id="edit-button"><a href="/profilepage">Edit</a></button>
                 </div >
                 <p><strong>Name:</strong> Nathan</p>
                 <p><strong>Personal email:</strong> nathanfry98@gmail.com</p>
