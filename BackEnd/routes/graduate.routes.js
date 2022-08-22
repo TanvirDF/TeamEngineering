@@ -11,6 +11,7 @@ router.route('/:id').get((req, res) => {
 
 
         graduate ? res.json(graduate) : res.status(404).send(`not found ${error}`)
+
     })
 
 

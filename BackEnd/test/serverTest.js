@@ -33,10 +33,10 @@ describe('testing the requests on database', () => {
 
     describe('Gradate', () => {
         it('testing GET requests', async () => {
-
-            const res = await chai.request(server).get(`/graduate/${1234}`).send()
+            const id = 1234
+            const res = await chai.request(server).get(`/graduate/${id}`).send()
             expect(res).to.have.status(200);
-            done()
+
 
         })
     })
