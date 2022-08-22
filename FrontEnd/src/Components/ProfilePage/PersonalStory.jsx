@@ -5,7 +5,9 @@ import Table from '@mui/material/Table';
 const PersonalStory = () => {
 
     return (
-        <Table/>
+        <>
+            
+        </>
 
     )
 }
