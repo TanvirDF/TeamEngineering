@@ -1,84 +1,160 @@
-* {
-    color: rgb(0, 20, 80);
-}
+ * {
+     color: rgb(0, 20, 80);
+ }
 
-body {
-    background-color: white;
-}
+ .profile-container {
+     display: flex;
+     flex-direction: row;
+     min-width: auto;
+     border: 5px solid rgb(0, 20, 80);
+     padding: 5%;
+     gap: 20%;
+     margin-left: 10%;
+     margin-right: 10%;
+     border-radius: 3px;
+     margin-top: 35px;
+ }
 
-.profile-container {
-    /* background-color: black; */
-    display: flex;
-    flex-direction: row;
-    min-width: auto;
-    border: 5px solid rgb(0, 20, 80);
-    padding-top: 2%;
-    gap: 20%;
-    margin-left: 10%;
-    margin-right: 10%;
-    border-radius: 3px;
-    /* margin-top: 35px; */
-}
+ .info-container {
+     width: 50%;
+     line-height: 80%;
+     display: flex;
+     flex-direction: column;
+     gap: 40px;
+     min-width: 20%;
+ }
 
-.info-container {
-    background-color: black;
-    /* background-color: white; */
-    /* display: flex;
-    flex-direction: column;
-    gap: 40px; */
-    min-width: 20%;
-}
+ .badge-container {
+     display: flex;
+     flex-direction: row;
+     margin-left: 10%;
+ }
 
-.badge-container {
-    /* background-color: black; */
-    /* display: flex;
-    flex-direction: row; */
-    margin-top: 3%;
-}
+ .badge-holder {
+     display: flex;
+     flex-direction: row;
+     width: 50%;
+     gap: 4px;
+ }
 
-.badge-holder {
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    gap: 15px;
-}
+ .h3 {
+     margin-top: 0%;
+     word-wrap: break-word;
+ }
 
-.h3 {
-    margin-top: 0%;
-    word-wrap: break-word;
-}
-
-/* .holder {
+ /* .holder {
     border-style: solid;
     border-color: black;
 } */
 
-.badge {
-    background-color: white;
+ .badge {
+     border-style: solid;
+     border-color: black;
+     margin-bottom: 15%;
+     width: 100%;
+ }
+
+ .label {
+     margin-top: 80px;
+ }
+
+ .scrollBox {
+     border-style: solid;
+     border-color: black;
+     border-radius: 2px;
+     overflow: scroll;
+     margin-top: 80px;
+     margin-bottom: 50px;
+     margin-left: 8%;
+ }
+
+ .score-container {
+     display: flex;
+     flex-direction: row;
+
+ }
+
+ /* {  */
+ /* color: rgb(0, 20, 80); */
+ /* } */
+
+ /* body { */
+ /* background-color: white; */
+ /* } */
+
+ /* .profile-container { */
+ /* background-color: black; */
+ /* display: flex; */
+ /* flex-direction: row; */
+ /* min-width: auto; */
+ /* border: 5px solid rgb(0, 20, 80); */
+ /* padding-top: 2%; */
+ /* gap: 20%; */
+ /* margin-left: 10%; */
+ /* margin-right: 10%; */
+ /* border-radius: 3px; */
+ /* margin-top: 35px; */
+ /* } */
+
+ /* .info-container { */
+ /* background-color: black; */
+ /* background-color: white; */
+ /* display: flex;
+    flex-direction: column;
+    gap: 40px; */
+ /* min-width: 20%; */
+ /* } */
+
+ /* .badge-container { */
+ /* background-color: black; */
+ /* display: flex;
+    flex-direction: row; */
+ /* margin-top: 3%; */
+ /* } */
+
+ /* .badge-holder { */
+ /* display: flex; */
+ /* flex-direction: row; */
+ /* width: 50%; */
+ /* gap: 15px; */
+ /* } */
+
+ /* .h3 { */
+ /* margin-top: 0%; */
+ /* word-wrap: break-word; */
+ /* } */
+
+ /* .holder {
     border-style: solid;
     border-color: black;
-    /* margin-bottom: 15%; */
-    width: 100%;
-}
+} */
 
-.label {
-    /* margin-top: 80px; */
-}
+ /* .badge { */
+ /* background-color: white; */
+ /* border-style: solid; */
+ /* border-color: black; */
+ /* margin-bottom: 15%; */
+ /* width: 100%; */
+ /* } */
 
-.scrollBox {
-    background-color: white;
-    border-style: solid;
-    border-color: black;
-    border-radius: 2px;
-    overflow: scroll;
-    /* margin-top: 80px; */
-    margin-bottom: 50px;
-    /* margin-left: 8%; */
-}
+ /* .label { */
+ /* margin-top: 80px; */
+ /* } */
 
-.score-container {
-    background-color: white;
-    display: flex;
-    flex-direction: row;
+ /* .scrollBox { */
+ /* background-color: white; */
+ /* border-style: solid; */
+ /* border-color: black; */
+ /* border-radius: 2px; */
+ /* overflow: scroll; */
+ /* margin-top: 80px; */
+ /* margin-bottom: 50px; */
+ /* margin-left: 8%; */
+ /* } */
 
-}
+ /* .score-container { */
+ /* background-color: white; */
+ /* display: flex; */
+ /* flex-direction: row; */
+
+ /* } */
