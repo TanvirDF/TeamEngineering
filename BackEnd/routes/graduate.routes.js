@@ -7,9 +7,10 @@ const router = express.Router();
 
 router.route('/:id').get((req, res) => {
     const id = req.params.id
-    Graduate.findOne({ userId: id }, (error, graduates) => {
+    Graduate.findOne({ userId: id }, (error, graduate) => {
 
-        graduates ? res.json(graduates) : res.status(404).send(`not found ${error}`)
+
+        graduate ? res.json(graduate) : res.status(404).send(`not found ${error}`)
     })
 
 

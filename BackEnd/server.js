@@ -6,11 +6,11 @@ const morgan = require("morgan");
 const cors = require("cors");
 
 //A file consisting of DB utility functions, mongoose is imported here
-const DBUtils = require("./src/utils/DBUtils")
+const DBUtils = require("./utils/DBUtils")
 
 //changed names to be clearer
-const graduateRouter = require('./src/routes/graduate.routes.js');
-const profileRouter = require('./src/routes/profile.routes.js');
+const graduateRouter = require('./routes/graduate.routes.js');
+const profileRouter = require('./routes/profile.routes.js');
 
 //Configuring path regardless of .env
 dotenv.config({ path: `.env.${process.env.NODE_ENV}` })
