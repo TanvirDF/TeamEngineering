@@ -3,6 +3,9 @@ import TrainingStory from "./TrainingStory";
 import '../../CSS/Training.css'
 
 
+
+
+
 const Training = ({ trainingData }) => {
 
     return (
@@ -13,9 +16,9 @@ const Training = ({ trainingData }) => {
                     trainingData.map((eachItem, index) => (
                          key={index} cohort={eachItem.cohort} track={eachItem.track} trainer={eachItem.trainer} finishDate={eachItem.finishDate} 
                     ))} */}
-                
+
             </div>
-            {/* <TrainingStory /> */}
+            <TrainingStory />
         </div>
     )
 }
