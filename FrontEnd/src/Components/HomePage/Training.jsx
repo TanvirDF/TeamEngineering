@@ -7,7 +7,6 @@ import '../../CSS/Training.css'
 
 
 const Training = ({ trainingData }) => {
-
     return (
         <div className="box-component">
             <div className="training-info">

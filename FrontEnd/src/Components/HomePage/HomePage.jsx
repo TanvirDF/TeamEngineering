@@ -29,15 +29,11 @@ const Homepage = () => {
             const res = await axios.get('http://localhost:4000/graduate/1234');
             setProfileData(res.data);
             // console.log(res.data);
-
-
-
         }
         catch (e) {
             console.log(e);
         }
-
-    }
+    };
 
     // const getTrainingData = async () => {
     //     try {
@@ -57,12 +53,12 @@ const Homepage = () => {
     //         const res = await axios.get('http://localhost:4000/information');
     //         setInformationData(res.data);
 
-    //         console.log(res.data);
-    //     }
     //     catch (e) {
     //         console.log(e);
     //     }
     // }
+
+ 
 
 
 
