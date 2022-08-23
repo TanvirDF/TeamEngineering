@@ -1,11 +1,10 @@
-
-function Footer() {
+const Footer = () => {
     return (
         <footer className="bg-light text-center text-lg-start ">
             <div className="text-center p-3" >
                 <span className=" p-3">
                     © 2022 Copyright:
-                    <a className='text-dark' href="https://digitalfutures.com/">Digital Future</a>
+                    <a className='text-dark' href="https://digitalfutures.com/">Digital Futures</a>
                 </span>
                 <a className="p-1" href="https://www.linkedin.com/company/digital-futures2021/">
                     <i className="bi bi-linkedin"></i>
@@ -24,4 +23,5 @@ function Footer() {
         </footer>
     )
 }
-export default Footer
+
+export default Footer;

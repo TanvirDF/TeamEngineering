@@ -2,22 +2,24 @@ import Story from './Story'
 import '../../CSS/Profile.css'
 
 
-const Profile = () => {
+const Profile = ({ profileData }) => {
+    const { name, personalEmail, dfEmail, github, phone, linkedin, gender, nationality } = profileData;
     return (
         <div className="whole-component">
             <div className="Basic-info">
                 <div className="title">
-                    {/* <h1>Your profile</h1>
-                    <button type="submit" id="edit-button">Edit</button> */}
+                    <h1>Your profile</h1>
+                    <button type="submit" id="edit-button"><a href="/profilepage">Edit</a></button>
                 </div >
-                <p><strong>Name:</strong> Nathan</p>
-                <p><strong>Personal email:</strong> nathanfry98@gmail.com</p>
-                <p><strong>Digital futures email:</strong> nathan@dfutures.com</p>
-                <p><strong>Github:</strong> nate8998</p>
-                <p><strong>Linkedin:</strong> nathan@linkedin</p>
-                <p><strong>Phone:</strong> 07872415240</p>
+                <p><strong>Name:</strong>{name} </p>
+                <p><strong>Personal email:</strong>{personalEmail} </p>
+                <p><strong>Digital futures email:</strong>{dfEmail} </p>
+                <p><strong>Github:</strong>{github}</p>
+                <p><strong>Linkedin:</strong>{linkedin} </p>
+                <p><strong>Phone:</strong>{phone}</p>
+
             </div>
-            <Story />
+            <Story profileData={profileData} />
         </div>
 
     )

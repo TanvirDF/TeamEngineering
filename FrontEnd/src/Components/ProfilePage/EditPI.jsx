@@ -240,8 +240,11 @@ const EditPI = () => {
                     <option value="Entertainer">Entertainer</option>
                     <option value="Entrepreneur">Entrepreneur</option>
                 </select>
+
+
             </form>
-            <img className="profile-picture" src="" alt="Selfie Upload" />
+
+            <input type="file" id="myFile" name="filename"></input>
 
         </div>
     )

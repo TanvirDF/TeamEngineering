@@ -2,6 +2,7 @@ import React from "react";
 import TrainingStory from "./TrainingStory";
 import '../../CSS/Training.css'
 
+
 const Training = ({ trainingData }) => {
 
     return (

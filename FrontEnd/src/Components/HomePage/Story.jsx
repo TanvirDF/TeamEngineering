@@ -1,4 +1,4 @@
-const Story = () => {
+const Story = ({ profileData }) => {
     return (
         <div className="quali" data-testId="story">
             <h3>Personal story summary:</h3>

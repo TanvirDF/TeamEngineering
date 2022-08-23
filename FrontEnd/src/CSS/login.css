@@ -1,0 +1,48 @@
+.body {
+    background-color: rgb(231, 231, 245);
+    margin-top: 0;
+    height: 650px;
+    width: 100%;
+    padding-top: 35px;
+}
+
+.loginHolder {
+    background-color: white;
+    padding-top: 45px;
+    padding-left: 5%;
+    padding-right: 10%;
+    height: 600px;
+    width: 40%;
+    border-radius: 2px;
+}
+
+form {
+    margin-left: 5%;
+}
+
+.eachBox {
+    display: flex;
+    margin-top: 15px;
+    color: rgb(0, 20, 80);
+
+}
+
+.loginHolder p {
+    margin-top: 15px;
+    margin-left: 2%;
+    color: rgb(0, 20, 80);
+}
+
+.loginBtn button {
+    margin-top: 45px;
+    margin-left: 28%;
+    margin-right: 15%;
+    height: 40px;
+    width: 50%;
+    border-radius: 2px;
+}
+
+.loginHolder h2 {
+    margin-top: 15px;
+    color: rgb(0, 20, 80);
+}

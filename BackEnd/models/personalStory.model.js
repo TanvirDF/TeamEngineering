@@ -1,4 +1,4 @@
-const { truncate } = require("fs/promises");
+
 const mongoose = require("mongoose");
 
 const degreeSchema = new mongoose.Schema({
@@ -48,7 +48,7 @@ const schoolingSchema = new mongoose.Schema({
     },
     examType: {
         type: String,
-        required: truncate,
+        required: true,
     },
     subject: {
         type: String,
@@ -75,7 +75,7 @@ const schoolingSchema = new mongoose.Schema({
         type: String,
         required: false,
     }
-    
+
 });
 
 const workSchema = new mongoose.Schema({
@@ -112,7 +112,7 @@ const workSchema = new mongoose.Schema({
         type: String,
         required: false,
     }
-    
+
 });
 
 const awardsSchema = new mongoose.Schema({
@@ -122,7 +122,7 @@ const awardsSchema = new mongoose.Schema({
     },
     examType: {
         type: String,
-        required: truncate,
+        required: true,
     },
     issuer: {
         type: String,
@@ -153,7 +153,7 @@ const awardsSchema = new mongoose.Schema({
         type: String,
         required: false,
     }
-    
+
 });
 
 const portfolioSchema = new mongoose.Schema({
@@ -163,7 +163,7 @@ const portfolioSchema = new mongoose.Schema({
     },
     url: {
         type: String,
-        required: truncate,
+        required: true,
     },
     year: {
         type: Date,
@@ -182,18 +182,18 @@ const portfolioSchema = new mongoose.Schema({
         type: String,
         required: false,
     }
-    
+
 });
 
 const personalStorySchema = new mongoose.Schema({
     userId: {
-      type: String,
-      required: true,
+        type: String,
+        required: true,
     },
     degrees: {
-      type: [degreeSchema],
-      default: [],
-      required: false,
+        type: [degreeSchema],
+        default: [],
+        required: false,
     },
     schooling: {
         type: [schoolingSchema],
@@ -215,8 +215,8 @@ const personalStorySchema = new mongoose.Schema({
         default: [],
         required: false,
     }
-  });
-  
+});
+
 
 const PersonalStory = mongoose.model(`PersonalStory`, personalStorySchema);
 
