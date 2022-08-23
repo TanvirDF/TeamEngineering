@@ -11,8 +11,8 @@ const DBUtils = require("./utils/DBUtils")
 //changed names to be clearer
 const graduateRouter = require('./routes/graduate.routes.js');
 
-const personalStory = require('./routes/personalStory.js');
-const trainingRouter = require('./routes/training.routes');
+const trainingRouter = require('./routes/training.routes.js');
+const personalStory = require('./routes/personalStory.routes.js');
 
 
 //Configuring path regardless of .env
