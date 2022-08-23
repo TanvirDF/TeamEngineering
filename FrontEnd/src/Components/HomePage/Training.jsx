@@ -2,7 +2,7 @@ import React from "react";
 import TrainingStory from "./TrainingStory";
 import '../../CSS/Training.css'
 
-const Training = () => {
+const Training = ({ trainingData }) => {
     return (
         <div className="box-component">
             <div className="training-info">

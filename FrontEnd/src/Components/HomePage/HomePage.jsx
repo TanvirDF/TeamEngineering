@@ -20,8 +20,8 @@ const Homepage = () => {
 
 
     useEffect(() => {
-        // getData();
-        // getTrainingData();
+        getInformationData();
+        getTrainingData();
         getProfileData();
     }, []);
 
@@ -41,52 +41,43 @@ const Homepage = () => {
 
 
 
-    // const getData = async () => {
-    //     try {
-    //         const res = await axios.get('http://localhost:3000/info');
-    //         setInformationData(res.data.data);
-    //         // console.log(res.data.data);
-    //     }
-    //     catch (e) {
-    //         console.log(e);
-    //     }
-    // };
 
 
 
-    // const getTrainingData = async () => {
-    //     try {
-    //         const res = await axios.get('http://localhost:4000/info%27');
-    //         setTrainingData(res.data.data)
-    //         console.log(res.data.data)
-    //     }
-    //     catch (e) {
-    //         console.log(e);
-    //     }
-    // }
+
+    const getTrainingData = async () => {
+        try {
+            const res = await axios.get('http://localhost:4000/trainings/1234');
+            setTrainingData(res.data)
+            console.log(res.data)
+        }
+        catch (e) {
+            console.log(e);
+        }
+    }
 
 
 
 
 
-    // const getData = async () => {
-    //     try {
-    //         console.log('Hello');
-    //         const res = await axios.get('http://localhost:4000/graduate/1234');
-    //         setInformationData(res.data);
+    const getInformationData = async () => {
+        try {
+            console.log('Hello');
+            const res = await axios.get('http://localhost:4000/information/1234');
+            setInformationData(res.data);
 
-    //         console.log(res.data);
-    //     }
-    //     catch (e) {
-    //         console.log(e);
-    //     }
-    // }
+            console.log(res.data);
+        }
+        catch (e) {
+            console.log(e);
+        }
+    }
 
     return (
         <div>
             <Profile profileData={profileData} />
-            <Training />
-            {/* <Information /> */}
+            <Training trainingData={trainingData} />
+            <Information informationDat={informationData} />
         </div>
     )
 
