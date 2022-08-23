@@ -41,6 +41,7 @@ describe('testing the requests on database', () => {
             expect(res.body).to.be.an(`object`);
         })
 
+
     })
 
     describe('Personal Story', () => {
@@ -69,6 +70,12 @@ describe('testing the requests on database', () => {
             expect(res).to.have.status(200);
             expect(res.body).to.be.an(`object`);
         })
+
+        it('should POST changes of personal stories', async () => {
+
+        })
+
+
 
     })
 
