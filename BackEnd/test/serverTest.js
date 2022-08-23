@@ -12,6 +12,8 @@ const personalStoryData = require('../utils/data/personalStory.json')
 chai.use(chaiHttp)
 
 describe('testing the requests on database', () => {
+    const id = graduateData[0].userId
+
     describe('Gradate', () => {
         beforeEach(async () => {
             try {
@@ -34,7 +36,6 @@ describe('testing the requests on database', () => {
             }
         })
         it('should GET a graduate info given the id', async () => {
-            const id = graduateData[0].userId
             const res = await chai.request(server).get(`/graduate/${id}`).send()
             expect(res).to.have.status(200);
             expect(res.body).to.be.an(`object`);
@@ -64,8 +65,7 @@ describe('testing the requests on database', () => {
             }
         })
         it('should GET a personal story info given the id', async () => {
-            const id = graduateData[0].userId
-            const res = await chai.request(server).get(`/personalStory/${1234}`).send()
+            const res = await chai.request(server).get(`/personalStory/${id}`).send()
             expect(res).to.have.status(200);
             expect(res.body).to.be.an(`object`);
         })
