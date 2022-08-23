@@ -12,6 +12,7 @@ const DBUtils = require("./utils/DBUtils")
 const graduateRouter = require('./routes/graduate.routes.js');
 const trainingRouter = require('./routes/training.routes.js');
 const personalStory = require('./routes/personalStory.routes.js');
+const informationRouter = require('./routes/information.routes.js');
 
 
 //Configuring path regardless of .env
@@ -38,7 +39,8 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/graduate', graduateRouter)
 app.use('/personalStory', personalStory)
-app.use('/training', trainingRouter)
+app.use('/training', trainingRouter);
+app.use('/information', informationRouter)
 
 //Connecting to the data base
 DBUtils.connect(db);
