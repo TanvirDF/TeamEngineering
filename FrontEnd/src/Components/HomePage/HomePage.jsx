@@ -31,6 +31,21 @@ const Homepage = () => {
             const res = await axios.get('http://localhost:4000/graduate/1234');
             setProfileData(res.data);
             console.log(res.data);
+
+        }
+        catch (e) {
+            console.log(e);
+        }
+    };
+
+
+
+
+    const getData = async () => {
+        try {
+            const res = await axios.get('http://localhost:3000/info');
+            setInformationData(res.data.data);
+            // console.log(res.data.data);
         }
         catch (e) {
             console.log(e);
@@ -72,10 +87,12 @@ const Homepage = () => {
             <Profile profileData={profileData} />
             <Training />
             {/* <Information /> */}
-
         </div>
-
     )
+
+
+
+
 }
 
 export default Homepage; 

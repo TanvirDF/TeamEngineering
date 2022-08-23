@@ -15,9 +15,12 @@ const Information = ({ informationData }) => {
                     <div className='badge-container'>
                         <div className='h3'><h3>Badges:</h3></div>
                         <div className='badge-holder'>
+
                             {/* <div className='holder'>
                                 <ProfileBadge badgeName={informationData.dfEmail} badgeDescription={informationData.name} />
                             </div > */}
+
+
                             <div>
                                 <ProfileScore />
                             </div >
