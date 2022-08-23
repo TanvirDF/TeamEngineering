@@ -10,7 +10,7 @@
     "morgan": "^1.10.0"
   },
   "scripts": {
-    "start": "cross-env NODE_ENV=development nodemon server",
+    "start": "SET NODE_ENV=development&& nodemon server",
     "test": "cross-env NODE_ENV=test mocha --timeout 5000 --exit",
     "test:staging": "cross-env NODE_ENV=staging mocha --timeout 10000 --exit"
   },
