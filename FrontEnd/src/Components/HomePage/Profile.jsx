@@ -17,10 +17,10 @@ const Profile = ({ profileData }) => {
 
 
     const getPersonalStory = async () => {
-        console.log('Hello from personal story');
+        // console.log('Hello from personal story');
         const res = await axios.get('http://localhost:4000/personalStory/1234');
         setPersonalStory(res.data);
-        console.log(res.data);
+        // console.log(res.data);
     }
 
 

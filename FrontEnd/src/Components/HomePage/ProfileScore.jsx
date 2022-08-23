@@ -2,13 +2,19 @@ import React from 'react';
 
 
 
-const ProfileScore = () => {
+const ProfileScore = ({ scoreData }) => {
     return (
         <div className='score-container'>
             <div className='label'><h3>Scores:</h3></div>
-            <div className='scrollBox'>Aptitude: 93%<br />
-                Java:87<br />
-                (here we only show particular external scores)</div>
+            < div className='scrollBox'>
+                {/* <p>Aptitude: {scoreData.aptitude}</p> */}
+                {scoreData.scores?.map((score, index) => (
+                    <div key={index}>
+                        <p> {score.name}:{score.score} </p>
+                        <p>(here we only show particular external scores)</p>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 }

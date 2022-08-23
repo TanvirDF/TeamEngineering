@@ -36,8 +36,12 @@
                 "priority": "3"
             }
         ],
-        "awards": {},
-        "portfolio": {}
+        "awards": [
+            {}
+        ],
+        "portfolio": [
+            {}
+        ]
     },
     {
         "userId": "5678",
@@ -75,8 +79,12 @@
                 "priority": "4"
             }
         ],
-        "awards": {},
-        "portfolio": {}
+        "awards": [
+            {}
+        ],
+        "portfolio": [
+            {}
+        ]
     },
     {
         "userId": "1245",
@@ -115,7 +123,11 @@
                 "priority": "3"
             }
         ],
-        "awards": {},
-        "portfolio": {}
+        "awards": [
+            {}
+        ],
+        "portfolio": [
+            {}
+        ]
     }
 ]
