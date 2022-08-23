@@ -36,9 +36,10 @@ const trainingSchema = new mongoose.Schema({
     modules: {
         type: [moduleSchema],
         default: [],
-        required: false,
+        required: false
     }
 })
+
 
 const Training = mongoose.model(`Training`, trainingSchema)
 
