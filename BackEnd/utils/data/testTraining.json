@@ -1,23 +1,35 @@
 [
     {
-        "userId": "3246",
-        "cohort": "3",
-        "learning Path": "cloud",
-        "trainer": "Ryan",
-        "training finish date": "26/02/22"
-    },
-    {
-        "userId": "7532",
+        "userId": "1234",
         "cohort": "4",
-        "learning Path": "data",
-        "trainer": "Lisa",
-        "training finish date": "26/05/22"
+        "learningPath": "cloud",
+        "trainer": "Ryan",
+        "finishDate": "26/05/22",
+        "modules": {
+            "name": "Module A",
+            "status": "PASSED"
+        }
     },
     {
-        "userId": "8080",
-        "cohort": "5",
-        "learning Path": "software",
+        "userId": "5678",
+        "cohort": "4",
+        "learningPath": "data",
+        "trainer": "Lisa",
+        "finishDate": "26/05/22",
+        "modules": {
+            "name": "Module B",
+            "status": "PASSED"
+        }
+    },
+    {
+        "userId": "9012",
+        "cohort": "4",
+        "learningPath": "software",
         "trainer": "Ed",
-        "training finish date": "26/08/22"
+        "finishDate": "26/05/22",
+        "modules": {
+            "name": "Module C",
+            "status": "PASSED"
+        }
     }
 ]

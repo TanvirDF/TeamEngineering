@@ -10,6 +10,7 @@ const DBUtils = require("./utils/DBUtils")
 
 //changed names to be clearer
 const graduateRouter = require('./routes/graduate.routes.js');
+
 const trainingRouter = require('./routes/training.routes.js');
 const personalStory = require('./routes/personalStory.routes.js');
 
@@ -46,7 +47,7 @@ DBUtils.connect(db);
 const server = app.listen(port, host, () => {
   const SERVER_HOST = server.address().address;
   const SERVER_PORT = server.address().port;
-  console.log(`Server is runnning on http://${SERVER_HOST}:${SERVER_PORT}`);
+  console.log(`Server is running on http://${SERVER_HOST}:${SERVER_PORT}`);
 });
 
 
