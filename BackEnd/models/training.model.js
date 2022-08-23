@@ -21,12 +21,16 @@ const trainingSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    track: {
+    learningPath: {
+        type: String,
+        required: true
+    },
+    trainer: {
         type: String,
         required: true
     },
     finishDate: {
-        type: Date,
+        type: String,
         required: true
     },
     modules: {
