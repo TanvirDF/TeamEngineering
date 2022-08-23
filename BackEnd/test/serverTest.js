@@ -32,12 +32,17 @@ describe('testing the requests on database', () => {
     })
 
     describe('Gradate', () => {
-        it('testing GET requests', async () => {
-
-            const res = await chai.request(server).get(`/graduate/${1234}`).send()
+        it('should GET a graduate given the id', async () => {
+            const id = testData[0].userId
+            const res = await chai.request(server).get(`/graduate/${id}`).send()
             expect(res).to.have.status(200);
-
+            expect(res.body).to.be.an(`object`);
         })
+
+    })
+
+    describe('Personal Story', () => {
+
     })
 
 })
