@@ -1,12 +1,24 @@
 import React from "react";
-import Table from '@mui/material/Table';
-// or
+import CertificatesTable from "../PersonalStory/CertificatesTable.jsx";
+import DegreeTable from "../PersonalStory/DegreeTable.jsx";
+import PortfolioTable from "../PersonalStory/Portfolio.jsx";
+import SchoolTable from "../PersonalStory/SchoolTable.jsx";
+import WorkTable from '../PersonalStory/WorkTable'
+
+
+
 
 const PersonalStory = () => {
-
+    
     return (
-        <Table/>
-
+        <>
+            <DegreeTable />
+            <SchoolTable />
+            <WorkTable /> 
+            <CertificatesTable />
+            <PortfolioTable />
+        </>
+       
     )
 }
 

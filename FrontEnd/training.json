@@ -1,0 +1,27 @@
+{
+    "info": {
+        "data": [
+            {
+                "id": "1234",
+                "cohort": 5,
+                "track": "Software Engineering",
+                "trainer": "Ed",
+                "finishDate": "2022-08-26"
+            },
+            {
+                "id": "5467",
+                "cohort": 5,
+                "track": "Data Science",
+                "trainer": "Ed",
+                "finishDate": "2022-08-26"
+            },
+            {
+                "id": "3498",
+                "cohort": 5,
+                "track": "Cloud Engineering",
+                "trainer": "Ed",
+                "finishDate": "2022-08-26"
+            }
+        ]
+    }
+}
