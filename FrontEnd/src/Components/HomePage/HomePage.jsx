@@ -18,17 +18,17 @@ const Homepage = () => {
 
 
     useEffect(() => {
-        getInformationData();
-        getTrainingData();
+        // getInformationData();
+        // getTrainingData();
         getProfileData();
     }, []);
 
     const getProfileData = async () => {
         try {
-            console.log('HEllo');
+            // console.log('Hello from profile');
             const res = await axios.get('http://localhost:4000/graduate/1234');
             setProfileData(res.data);
-            console.log(res.data);
+            // console.log(res.data);
 
 
 
@@ -39,29 +39,30 @@ const Homepage = () => {
 
     }
 
-    const getTrainingData = async () => {
-        try {
-            const res = await axios.get('http://localhost:4000/trainings/1234');
-            setTrainingData(res.data)
-            console.log(res.data)
-        }
-        catch (e) {
-            console.log(e);
-        }
-    }
+    // const getTrainingData = async () => {
+    //     try {
+    //         console.log('Hello from training');
+    //         const res = await axios.get('http://localhost:4000/training');
+    //         setTrainingData(res.data)
+    //         console.log(res.data)
+    //     }
+    //     catch (e) {
+    //         console.log(e);
+    //     }
+    // }
 
-    const getInformationData = async () => {
-        try {
-            console.log('Hello');
-            const res = await axios.get('http://localhost:4000/information/1234');
-            setInformationData(res.data);
+    // const getInformationData = async () => {
+    //     try {
+    //         console.log('Hello from information');
+    //         const res = await axios.get('http://localhost:4000/information');
+    //         setInformationData(res.data);
 
-            console.log(res.data);
-        }
-        catch (e) {
-            console.log(e);
-        }
-    }
+    //         console.log(res.data);
+    //     }
+    //     catch (e) {
+    //         console.log(e);
+    //     }
+    // }
 
 
 
