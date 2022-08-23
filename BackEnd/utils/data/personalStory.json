@@ -29,9 +29,7 @@
             "toDate": "2018-06-12",
             "weight": "M",
             "priority": "3"
-        },
-        "awards": {},
-        "portfolio": {}
+        }
     },
     {
         "userId": "5678",
@@ -62,9 +60,7 @@
             "toDate": "2015-08-23",
             "weight": "S",
             "priority": "4"
-        },
-        "awards": {},
-        "portfolio": {}
+        }
     },
     {
         "userId": "1234",
@@ -96,8 +92,6 @@
             "toDate": "2018-06-12",
             "weight": "M",
             "priority": "3"
-        },
-        "awards": {},
-        "portfolio": {}
+        }
     }
 ]
