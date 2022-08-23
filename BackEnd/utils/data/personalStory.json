@@ -6,7 +6,7 @@
             "subject": "Law",
             "level": "Bachelor's",
             "grade": "3.0",
-            "fromDate" : "2012-09-01",
+            "fromDate": "2012-09-01",
             "toDate": "2016-06-30",
             "weight": "XL",
             "priority": "1",
@@ -17,9 +17,9 @@
             "examType": "A-Level",
             "subject": "History",
             "grade": "A*",
-            "year" : "2012",
+            "year": "2012",
             "weight": "L",
-            "priority": "2",
+            "priority": "2"
         },
         "work": {
             "type": "Work Experience",
@@ -40,7 +40,7 @@
             "subject": "Photography",
             "level": "Bachelor's",
             "grade": "4.0",
-            "fromDate" : "2013-09-01",
+            "fromDate": "2013-09-01",
             "toDate": "2017-06-30",
             "weight": "XL",
             "priority": "1"
@@ -50,9 +50,9 @@
             "examType": "AP",
             "subject": "Calculus BC",
             "grade": "5",
-            "year" : "2013",
+            "year": "2013",
             "weight": "L",
-            "priority": "2",
+            "priority": "2"
         },
         "work": {
             "type": "Work Experience",
@@ -73,7 +73,7 @@
             "subject": "Law",
             "level": "Bachelor's",
             "grade": "3.0",
-            "fromDate" : "2012-09-01",
+            "fromDate": "2012-09-01",
             "toDate": "2016-06-30",
             "weight": "XL",
             "priority": "1",
@@ -84,9 +84,9 @@
             "examType": "A-Level",
             "subject": "History",
             "grade": "A*",
-            "year" : "2012",
+            "year": "2012",
             "weight": "L",
-            "priority": "2",
+            "priority": "2"
         },
         "work": {
             "type": "Work Experience",
