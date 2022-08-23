@@ -1,0 +1,36 @@
+[
+    {
+        "userId": "1234",
+        "badges": {
+            "name": "badge1",
+            "description": "ABC1"
+        },
+        "scores": {
+            "score": "87",
+            "name": "Java"
+        }
+    },
+    {
+        "userId": "5678",
+        "badges": {
+            "name": "badge2",
+            "description": "AB45"
+        },
+        "scores": {
+            "score": "87",
+            "name": "Java"
+        }
+    },
+    {
+        "userId": "9012",
+        "badges": {
+            "name": "badge 3",
+            "description": "ABC1"
+        },
+        "scores": {
+            "score": "87",
+            "name": "Java"
+        }
+    }
+    
+]
