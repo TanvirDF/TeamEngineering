@@ -19,7 +19,7 @@ const Profile = ({ profileData }) => {
                 <p><strong>Phone:</strong>{phone}</p>
 
             </div>
-            <Story />
+            <Story profileData={profileData} />
         </div>
 
     )

@@ -41,16 +41,16 @@ const Homepage = () => {
 
 
 
-    const getData = async () => {
-        try {
-            const res = await axios.get('http://localhost:3000/info');
-            setInformationData(res.data.data);
-            // console.log(res.data.data);
-        }
-        catch (e) {
-            console.log(e);
-        }
-    };
+    // const getData = async () => {
+    //     try {
+    //         const res = await axios.get('http://localhost:3000/info');
+    //         setInformationData(res.data.data);
+    //         // console.log(res.data.data);
+    //     }
+    //     catch (e) {
+    //         console.log(e);
+    //     }
+    // };
 
 
 
