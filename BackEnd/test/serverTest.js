@@ -2,9 +2,9 @@ const chai = require('chai')
 const { expect } = require('chai')
 const chaiHttp = require('chai-http')
 const server = require('../server.js')
-const Graduate = require("../models_take2/graduate.model");
+const Graduate = require("../models/graduate.model");
 
-const testData = require('../models_take2/testUsers.json')
+const testData = require('../utils/data/testUsers.json')
 
 chai.use(chaiHttp)
 

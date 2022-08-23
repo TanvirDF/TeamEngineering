@@ -1,6 +1,6 @@
 const express = require("express");
 
-const Graduate = require("../models_take2/graduate.model");
+const Graduate = require("../models/graduate.model");
 
 const router = express.Router();
 

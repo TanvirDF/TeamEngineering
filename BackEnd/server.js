@@ -10,7 +10,7 @@ const DBUtils = require("./utils/DBUtils")
 
 //changed names to be clearer
 const graduateRouter = require('./routes/graduate.routes.js');
-const personalStory = require('./routes/personalStory.js');
+const personalStory = require('./routes/personalStory.routes.js');
 
 //Configuring path regardless of .env
 dotenv.config({ path: `.env.${process.env.NODE_ENV}` })

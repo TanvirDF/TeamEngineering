@@ -1,5 +1,5 @@
 const express = require("express");
-const PersonalStory = require("../models_take2/personalStory.model");
+const PersonalStory = require("../models/personalStory.model");
 
 const router = express.Router();
 
