@@ -2,6 +2,7 @@ import React from 'react';
 import Profile from "./Profile";
 import Training from "./Training";
 import Information from "./Information";
+
 // import '.../CSS/home.css'
 
 
@@ -10,9 +11,11 @@ import axios from 'axios';
 // import FullProfile from './component/FullProfile';
 
 
+
 const Homepage = () => {
 
     const [profileData, setProfileData] = useState([]);
+
     const [trainingData, setTrainingData] = useState([]);
     const [informationData, setInformationData] = useState([]);
 
@@ -31,6 +34,7 @@ const Homepage = () => {
             const res = await axios.get('http://localhost:4000/graduate/1234');
             setProfileData(res.data);
             console.log(res.data);
+
 
         }
         catch (e) {
@@ -87,6 +91,7 @@ const Homepage = () => {
             <Profile profileData={profileData} />
             <Training />
             {/* <Information /> */}
+
         </div>
     )
 
