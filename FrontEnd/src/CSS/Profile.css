@@ -14,12 +14,12 @@
 }
 
 .Basic-info {
-    display: flex;
-    flex-direction: column;
+
     line-height: 100%;
     min-width: 20%;
     color: rgb(0, 20, 80);
     text-align: left;
+
 
 
 }
