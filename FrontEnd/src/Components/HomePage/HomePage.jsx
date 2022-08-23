@@ -2,6 +2,8 @@ import React from 'react';
 import Profile from "./Profile";
 import Training from "./Training";
 import Information from "./Information";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 // import '.../CSS/home.css'
 
@@ -15,6 +17,7 @@ import axios from 'axios';
 const Homepage = () => {
 
     const [profileData, setProfileData] = useState([]);
+
 
     const [trainingData, setTrainingData] = useState([]);
     const [informationData, setInformationData] = useState([]);
@@ -36,10 +39,20 @@ const Homepage = () => {
             console.log(res.data);
 
 
+
         }
         catch (e) {
             console.log(e);
         }
+
+    }
+
+    return ( 
+        <div>
+            <Profile profileData={profileData} />
+            <Information  />
+            <Training trainingData={trainingData } />
+  </div>
     };
 
 
@@ -86,13 +99,9 @@ const Homepage = () => {
     //     }
     // }
 
-    return (
-        <div>
-            <Profile profileData={profileData} />
-            <Training />
-            {/* <Information /> */}
 
-        </div>
+
+    
     )
 
 
