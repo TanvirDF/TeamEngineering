@@ -22,11 +22,25 @@
 }
 
 .profile-picture {
-    border: 4px solid rgb(0, 20, 80);
+    border: 2px solid rgb(0, 20, 80);
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    background-color: rgb(150, 192, 226);
+    /* background-color: rgb(150, 192, 226); */
+    align-content: center;
+    background-image: url("../default-profile-pic.jpg");
+    background-position: center;
+
+
+
+}
+
+
+
+.add-image {
+
+    display: flex;
+    flex-direction: column;
 
 
 }

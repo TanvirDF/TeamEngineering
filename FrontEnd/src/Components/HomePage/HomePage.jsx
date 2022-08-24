@@ -6,6 +6,15 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 
+// import '.../CSS/home.css'
+
+
+// import { useEffect, useState } from 'react';
+// import axios from 'axios';
+// import FullProfile from './component/FullProfile';
+
+
+
 
 
 const Homepage = () => {
@@ -33,7 +42,20 @@ const Homepage = () => {
         catch (e) {
             console.log(e);
         }
+
+
+    }
+
+    return (
+        <div>
+            <Profile profileData={profileData} />
+            <Information />
+            <Training trainingData={trainingData} />
+        </div>
+    );
+
     };
+
 
     const getTrainingData = async () => {
         try {
@@ -73,11 +95,16 @@ const Homepage = () => {
             <Information informationDat={informationData} />
         </div>
 
+
+
+    // )
+
     )
+
 
 
 
 
 }
 
-export default Homepage; 
+export default Homepage
