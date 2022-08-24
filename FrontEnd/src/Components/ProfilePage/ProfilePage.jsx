@@ -2,14 +2,36 @@ import React from "react";
 import EditPI from "./EditPI";
 import PersonalStory from "./PersonalStory.jsx";
 import ProfileCompletion from "./ProfileCompletion";
-// import "FrontEnd/src/CSS/EditPI.css";
+import { useEffect, useState } from "react";
+import axios from "axios";
+
     
 const ProfilePage = () => {
+
+    const [profileData, setProfileData] = useState([]);
+    
+    
+    useEffect(() => {
+        getProfileData();
+    }, []);
+
+
+    const getProfileData = async () => {
+        try {
+            const res = await axios.get('mongodb+srv://Tanvir:pass123@teamengineering.zhdzlfu.mongodb.net/userData/personalStory');
+            setProfileData(res.data);
+            console.log(res.data);
+        }
+        catch (e) {
+            console.log(e);
+        }
+    }
+
     return (
         <div>
         <ProfileCompletion/>
         <EditPI/>
-        <PersonalStory />
+        <PersonalStory profileData={profileData} />
         </div>
     )
 }

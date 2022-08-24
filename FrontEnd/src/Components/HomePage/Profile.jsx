@@ -30,6 +30,9 @@ const Profile = ({ profileData }) => {
 
 
     const { name, personalEmail, dfEmail, github, phone, linkedin, gender, nationality } = profileData;
+
+
+    
     return (
         <div className="whole-component">
             <div className="Basic-info">

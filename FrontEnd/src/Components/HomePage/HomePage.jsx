@@ -6,14 +6,6 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 
-// import '.../CSS/home.css'
-
-
-// import { useEffect, useState } from 'react';
-// import axios from 'axios';
-// import FullProfile from './component/FullProfile';
-
-
 
 
 
@@ -39,8 +31,6 @@ const Homepage = () => {
         catch (e) {
             console.log(e);
         }
-
-
     }
     const getTrainingData = async () => {
         try {
@@ -73,16 +63,25 @@ const Homepage = () => {
             <Information informationData={informationData} />
         </div>
 
-
-
-        // )
-
     )
-
-
 }
 
 
 
 
-export default Homepage
+
+    // const getData = async () => {
+    //     try {
+    //         console.log('Hello');
+    //         const res = await axios.get('http://localhost:4000/graduate/1234');
+    //         setInformationData(res.data);
+
+    //         console.log(res.data);
+    //     }
+    //     catch (e) {
+    //         console.log(e);
+    //     }
+    // }
+
+
+export default Homepage; 
