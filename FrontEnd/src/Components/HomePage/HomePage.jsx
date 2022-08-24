@@ -69,20 +69,64 @@ const Homepage = () => {
     return (
         <div>
             <Profile profileData={profileData} />
-            <Training trainingData={trainingData} />
-            <Information informationDat={informationData} />
-        </div>
+            <Information  />
+            <Training trainingData={trainingData } />
+  </div>
+    };
 
 
 
         // )
 
+    // const getData = async () => {
+    //     try {
+    //         const res = await axios.get('http://localhost:3000/info');
+    //         setInformationData(res.data.data);
+    //         // console.log(res.data.data);
+    //     }
+    //     catch (e) {
+    //         console.log(e);
+    //     }
+    // };
+
+
+
+    // const getTrainingData = async () => {
+    //     try {
+    //         const res = await axios.get('http://localhost:4000/info%27');
+    //         setTrainingData(res.data.data)
+    //         console.log(res.data.data)
+    //     }
+    //     catch (e) {
+    //         console.log(e);
+    //     }
+    // }
+
+
+
+
+
+    // const getData = async () => {
+    //     try {
+    //         console.log('Hello');
+    //         const res = await axios.get('http://localhost:4000/graduate/1234');
+    //         setInformationData(res.data);
+
+    //         console.log(res.data);
+    //     }
+    //     catch (e) {
+    //         console.log(e);
+    //     }
+    // }
+
+
+
+    
     )
+
+
 
 
 }
 
-
-
-
-export default Homepage
+export default Homepage; 
