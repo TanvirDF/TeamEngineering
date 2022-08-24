@@ -4,20 +4,21 @@ import DegreeTable from "../PersonalStory/DegreeTable.jsx";
 import PortfolioTable from "../PersonalStory/Portfolio.jsx";
 import SchoolTable from "../PersonalStory/SchoolTable.jsx";
 import WorkTable from '../PersonalStory/WorkTable'
-
+import '../../CSS/tables.css'
 
 
 
 const PersonalStory = ({ profileData }) => {
 
     return (
-        <>
-            <DegreeTable />
-            <SchoolTable />
-            <WorkTable />
-            <CertificatesTable profileData={profileData} />
-            <PortfolioTable />
-        </>
+        <div className="storybox">
+            <h1>Personal Story</h1>
+            <DegreeTable degrees={profileData.degrees} />
+            <SchoolTable schooling={profileData.schooling} />
+            <WorkTable work={profileData.work} />
+            <CertificatesTable certificate={profileData.certificate} />
+            <PortfolioTable portfolio={profileData.portfolio} />
+       </div>
 
     )
 }

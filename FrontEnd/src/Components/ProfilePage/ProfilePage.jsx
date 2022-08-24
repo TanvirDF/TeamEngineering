@@ -27,6 +27,8 @@ const ProfilePage = () => {
         }
     }
 
+
+
     return (
         <div>
             <ProfileCompletion />

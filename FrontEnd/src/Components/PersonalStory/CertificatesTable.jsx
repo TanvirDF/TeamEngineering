@@ -1,18 +1,18 @@
 import { useState } from 'react';
-// import data from './personalStory.json'
+import data from './personalStory.json'
 // import '../'
 
-const CertificatesTable = ({ profileData }) => {
+const CertificatesTable = ({ certificate }) => {
 
   //const [certificates, setCertificates] = useState(data);
 
   return (
 
     <>
-      <div>
+      <div className='infotables'>
         <h4>Awards Experience / Positions Held</h4>
-        <table>
-          <thead>
+        <table id='table'>
+          <thead className='head'>
             <tr>
               <th>Type</th>
               <th>Issuer</th>
@@ -24,19 +24,18 @@ const CertificatesTable = ({ profileData }) => {
               <th>Description</th>
             </tr>
           </thead>
-          <tbody>
-            {profileData.map((certificate,index) =>
+          <tbody className='body'>
+            {certificate?.map((certificate, index) =>
               <tr key={index}>
                 <td>{certificate.type}</td>
-                <td>{certificate.employer}</td>
-                <td>{certificate.position}</td>
-                <td>{certificate.fromDate}</td>
-                <td>{certificate.toDate}</td>
+                <td>{certificate.issuer}</td>
+                <td>{certificate.awards}</td>
+                <td>{certificate.grade}</td>
+                <td>{certificate.year}</td>
                 <td>{certificate.weight}</td>
                 <td>{certificate.priority}</td>
                 <td>{certificate.description}</td>
-              </tr>
-            )}
+              </tr>)}
 
           </tbody>
         </table>
