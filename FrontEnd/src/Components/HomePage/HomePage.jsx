@@ -72,7 +72,8 @@ const Homepage = () => {
             <Information  />
             <Training trainingData={trainingData } />
   </div>
-    };
+    )
+    }
 
 
 
@@ -119,14 +120,5 @@ const Homepage = () => {
     //     }
     // }
 
-
-
-    
-    )
-
-
-
-
-}
 
 export default Homepage; 
