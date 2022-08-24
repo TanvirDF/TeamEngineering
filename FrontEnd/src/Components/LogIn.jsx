@@ -19,20 +19,20 @@ const LogIn = () => {
     }
 
 
-// submit button handle change to do
+    // submit button handle change to do
     return (
         <div className='body'>
             <div className='loginHolder'>
                 <h2>Digital Futures</h2>
                 <p>Login</p>
-                <form action="">
+                <form className="Form" action="">
                     <div className='eachBox'><label htmlFor="email">Email: </label>
-                        <input type="email" id='email' name='email' onChange={handleChange} required/>
+                        <input type="email" id='email' name='email' onChange={handleChange} required />
+
+                        <label htmlFor="password" > Password </label>
+                        <input type="password" id='password' name='password' onChange={handleChange} required />
                     </div>
-                    <div className='eachBox'><label htmlFor="password" > Password </label>
-                        <input type="text" id='password' name='password' onChange= {handleChange} required/>
-                    </div>
-                
+
                     <div className='loginBtn'>
                         <button type='submit' name='loginBtn'>Login</button>
                     </div>
