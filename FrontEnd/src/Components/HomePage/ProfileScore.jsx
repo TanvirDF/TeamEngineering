@@ -7,10 +7,10 @@ const ProfileScore = ({ scoreData }) => {
         <div className='score-container'>
             <div className='label'><h3>Scores:</h3></div>
             < div className='scrollBox'>
-                {/* <p>Aptitude: {scoreData.aptitude}</p> */}
+                <p>Aptitude: {scoreData.Aptitude}</p>
                 {scoreData.scores?.map((score, index) => (
                     <div key={index}>
-                        <p> {score.name}:{score.score} </p>
+                        <p> {score.name} : {score.score} </p>
                         <p>(here we only show particular external scores)</p>
                     </div>
                 ))}

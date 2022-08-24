@@ -18,7 +18,7 @@ const Training = ({ trainingData }) => {
                 <p><strong>Training finish date :  </strong>{
                     trainingFinishDate}</p>
             </div>
-            <TrainingStory />
+            <TrainingStory trainingData={trainingData} />
         </div>
     )
 }
