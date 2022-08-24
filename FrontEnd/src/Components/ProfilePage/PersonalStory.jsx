@@ -15,7 +15,7 @@ const PersonalStory = ({props}) => {
             <DegreeTable />
             <SchoolTable />
             <WorkTable /> 
-            <CertificatesTable props={props.awards} />
+            <CertificatesTable />
             <PortfolioTable />
         </>
        

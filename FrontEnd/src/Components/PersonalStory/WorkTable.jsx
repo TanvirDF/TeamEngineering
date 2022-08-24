@@ -1,9 +1,9 @@
 import { useState } from 'react';
-
+import data from './personalStory.json'
 
 const WorkTable = () => {
 
-  const [works, setWorks] = useState();
+  const [works, setWorks] = useState(data);
 
   return (
     

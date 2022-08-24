@@ -1,9 +1,9 @@
 import { useState } from 'react';
-
+import data from './personalStory.json'
 
 const PortfolioTable = () => {
 
-  const [portfolios, setPortfolios] = useState();
+  const [portfolios, setPortfolios] = useState(data);
 
   return (
     

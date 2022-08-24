@@ -8,18 +8,18 @@ import axios from "axios";
     
 const ProfilePage = () => {
 
-    const [personalStory, setPersonalStory] = useState([]);
+    const [profileData, setProfileData] = useState([]);
     
     
     useEffect(() => {
-        getPersonalStory();
+        getProfileData();
     }, []);
 
 
-    const getPersonalStory = async () => {
+    const getProfileData = async () => {
         try {
             const res = await axios.get('mongodb+srv://Tanvir:pass123@teamengineering.zhdzlfu.mongodb.net/userData/personalStory');
-            setPersonalStory(res.data);
+            setProfileData(res.data);
             console.log(res.data);
         }
         catch (e) {
@@ -31,7 +31,7 @@ const ProfilePage = () => {
         <div>
         <ProfileCompletion/>
         <EditPI/>
-        <PersonalStory props={personalStory} />
+        <PersonalStory profileData={profileData} />
         </div>
     )
 }
