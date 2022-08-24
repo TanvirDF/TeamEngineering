@@ -8,7 +8,7 @@ const PortfolioTable = ({ portfolio }) => {
 
     <>
       <div className='infotables'>
-        <h4>Portfolio</h4>
+        <h4 >Portfolio</h4>
         <table id='table'>
           <thead className='head'>
             <tr>

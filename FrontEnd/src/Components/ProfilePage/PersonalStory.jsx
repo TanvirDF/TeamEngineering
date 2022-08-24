@@ -12,7 +12,7 @@ const PersonalStory = ({ profileData }) => {
 
     return (
         <div className="storybox">
-            <h1>Personal Story</h1>
+            <h1 id="content">Personal Story</h1>
             <DegreeTable degrees={profileData.degrees} />
             <SchoolTable schooling={profileData.schooling} />
             <WorkTable work={profileData.work} />

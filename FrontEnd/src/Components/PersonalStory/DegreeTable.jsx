@@ -7,7 +7,7 @@ const DegreeTable = ({ degrees }) => {
 
     <>
       <div className='infotables'>
-        <h4>Degrees</h4>
+        <h4 >Degrees</h4>
         <table id='table'>
           <thead className='head'>
             <tr>

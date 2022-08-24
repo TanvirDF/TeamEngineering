@@ -10,7 +10,7 @@ const CertificatesTable = ({ certificate }) => {
 
     <>
       <div className='infotables'>
-        <h4>Awards Experience / Positions Held</h4>
+        <h4 >Awards Experience / Positions Held</h4>
         <table id='table'>
           <thead className='head'>
             <tr>

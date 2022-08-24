@@ -9,7 +9,7 @@ const SchoolTable = ({ schooling }) => {
 
     <>
       <div className='infotables'>
-        <h4>School Qualifications</h4>
+        <h4 >School Qualifications</h4>
         <table id='table'>
           <thead className='head'>
             <tr>

@@ -9,7 +9,7 @@ const WorkTable = ({ work }) => {
 
     <>
       <div className='infotables'>
-        <h4 >Work Experience / positions held</h4>
+        <h4  >Work Experience / positions held</h4>
         <table id='table'>
           <thead className='head'>
             <tr>
