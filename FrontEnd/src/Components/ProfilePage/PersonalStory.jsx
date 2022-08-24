@@ -8,17 +8,17 @@ import WorkTable from '../PersonalStory/WorkTable'
 
 
 
-const PersonalStory = ({props}) => {
-    
+const PersonalStory = ({ profileData }) => {
+
     return (
         <>
             <DegreeTable />
             <SchoolTable />
-            <WorkTable /> 
-            <CertificatesTable />
+            <WorkTable />
+            <CertificatesTable profileData={profileData} />
             <PortfolioTable />
         </>
-       
+
     )
 }
 
