@@ -35,12 +35,6 @@
                 "weight": "M",
                 "priority": "3"
             }
-        ],
-        "awards": [
-            {}
-        ],
-        "portfolio": [
-            {}
         ]
     },
     {
@@ -78,14 +72,8 @@
                 "weight": "S",
                 "priority": "4"
             }
-        ],
-        "awards": [
-            {}
-        ],
-        "portfolio": [
-            {}
         ]
-    },
+
     {
         "userId": "1245",
         "degrees": [
@@ -122,12 +110,6 @@
                 "weight": "M",
                 "priority": "3"
             }
-        ],
-        "awards": [
-            {}
-        ],
-        "portfolio": [
-            {}
-        ]
+       ]
     }
 ]

@@ -89,11 +89,40 @@ describe('testing the requests on database', () => {
             expect(res.body).to.be.an(`object`);
         })
 
-        it('should POST changes of personal stories', async () => {
-
+        it('should POST changes of personal stories given the id', async () => {
+            const personal = personalStoryData[0]
+            personal.degrees[0].university = "Oxford University"
+            const res = await chai.request(server).post(`/personalStory/${id}`).send(personal)
+            expect(res).to.have.status(200)
+            expect(res.text).to.be.eql('data updated')
         })
-
-
+        it('should return 404  if a personal stories is not available given the id', async () => {
+            const personal = personalStoryData[0]
+            personal.degrees[0].university = "Oxford University"
+            const res = await chai.request(server).post(`/personalStory/${11111}`).send(personal)
+            expect(res).to.have.status(404)
+            expect(res.text).to.contain('info not found')
+        })
+        it('should return 400  if a personal stories passed does not match schema', async () => {
+            const personal = {
+                "userId": "1234",
+                "degrees": [
+                    {
+                        "university": "Harvard",
+                        "level": "Bachelor's",
+                        "grade": "3.0",
+                        "fromDate": "2012-09-01",
+                        "toDate": "2016-06-30",
+                        "weight": "XL",
+                        "priority": "1",
+                        "description": "Minored in French Language"
+                    }
+                ],
+            }
+            const res = await chai.request(server).post(`/personalStory/${id}`).send(personal)
+            expect(res).to.have.status(400)
+            expect(res.text).to.contain('Error')
+        })
 
     })
 
