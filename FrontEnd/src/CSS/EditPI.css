@@ -6,14 +6,16 @@
 
 .form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
+
 
 .Whole-editpi {
     display: flex;
     flex-direction: row;
     box-shadow: 0 0 2em rgb(143, 155, 219);
     margin: 40px;
+    /* margin: 10px; */
     margin-left: 10%;
     margin-right: 10%;
     padding: 5%;
@@ -21,6 +23,17 @@
     background: whitesmoke;
     border-radius: 25px;
 
+}
+
+.profileBtn {
+    margin-top: 5%;
+}
+
+.identity {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .profile-picture {

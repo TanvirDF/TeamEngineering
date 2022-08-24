@@ -18,7 +18,7 @@ const PersonalStory = ({ profileData }) => {
             <WorkTable work={profileData.work} />
             <CertificatesTable certificate={profileData.certificate} />
             <PortfolioTable portfolio={profileData.portfolio} />
-       </div>
+        </div>
 
     )
 }
