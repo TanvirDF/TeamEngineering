@@ -17,28 +17,29 @@ const trainingSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    cohort: { 
-        type: String, 
-        required: true 
+    cohort: {
+        type: String,
+        required: true
     },
-    track: { 
-        type: String, 
-        required: true 
+    learningPath: {
+        type: String,
+        required: true
     },
-    trainer: { 
-        type: String, 
-        required: true 
+    trainer: {
+        type: String,
+        required: true
     },
-    finishDate: { 
-        type: Date, 
-        required: true 
+    trainingFinishDate: {
+        type: String,
+        required: true
     },
     modules: {
         type: [moduleSchema],
         default: [],
-        required: false,
+        required: false
     }
 })
+
 
 const Training = mongoose.model(`Training`, trainingSchema)
 

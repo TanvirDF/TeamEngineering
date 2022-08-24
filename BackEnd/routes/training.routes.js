@@ -1,5 +1,5 @@
 const express = require("express");
-const Training = require("../models_take2/training.model");
+const Training = require("../models/training.model");
 
 const router = express.Router();
 
