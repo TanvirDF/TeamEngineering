@@ -6,19 +6,31 @@
 
 .form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
+
 
 .Whole-editpi {
     display: flex;
     flex-direction: row;
     border: 5px solid rgb(0, 20, 80);
-    margin: 20px;
+    margin: 10px;
     margin-left: 10%;
     margin-right: 10%;
     padding: 5%;
     gap: 10%;
 
+}
+
+.profileBtn {
+    margin-top: 5%;
+}
+
+.identity {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .profile-picture {

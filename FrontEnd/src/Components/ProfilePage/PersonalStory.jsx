@@ -9,16 +9,16 @@ import WorkTable from '../PersonalStory/WorkTable'
 
 
 const PersonalStory = () => {
-    
+
     return (
         <>
-            <DegreeTable />
-            <SchoolTable />
-            <WorkTable /> 
-            <CertificatesTable />
-            <PortfolioTable />
+            {/* <DegreeTable /> */}
+            {/* <SchoolTable /> */}
+            {/* <WorkTable />  */}
+            {/* <CertificatesTable /> */}
+            {/* <PortfolioTable /> */}
         </>
-       
+
     )
 }
 
