@@ -24,7 +24,7 @@ const Information = ({ informationData }) => {
                     </div>
                 </div >
                 <div>
-                    <ProfileScore scoreData={informationData} />
+                    {/* <ProfileScore scoreData={informationData} /> */}
                 </div >
             </div >
         </div>

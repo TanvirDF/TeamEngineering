@@ -23,9 +23,6 @@ const Homepage = () => {
     const [trainingData, setTrainingData] = useState([]);
     const [informationData, setInformationData] = useState([]);
 
-
-
-
     useEffect(() => {
         getInformationData();
         getTrainingData();
@@ -45,18 +42,6 @@ const Homepage = () => {
 
 
     }
-
-    return (
-        <div>
-            <Profile profileData={profileData} />
-            <Information />
-            <Training trainingData={trainingData} />
-        </div>
-    );
-
-    };
-
-
     const getTrainingData = async () => {
         try {
             // console.log('Hello from training');
@@ -81,13 +66,6 @@ const Homepage = () => {
         }
     }
 
-
-
-
-
-
-
-
     return (
         <div>
             <Profile profileData={profileData} />
@@ -97,14 +75,14 @@ const Homepage = () => {
 
 
 
-    // )
+        // )
 
     )
 
 
-
-
-
 }
+
+
+
 
 export default Homepage
