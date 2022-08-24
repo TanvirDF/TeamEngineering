@@ -4,7 +4,7 @@
         "cohort": "4",
         "learningPath": "cloud",
         "trainer": "Ryan",
-        "finishDate": "26/05/22",
+        "trainingFinishDate": "26/05/22",
         "modules": {
             "name": "Module A",
             "status": "PASSED"
@@ -15,7 +15,7 @@
         "cohort": "4",
         "learningPath": "data",
         "trainer": "Lisa",
-        "finishDate": "26/05/22",
+        "trainingFinishDate": "26/05/22",
         "modules": {
             "name": "Module B",
             "status": "PASSED"
@@ -26,7 +26,7 @@
         "cohort": "4",
         "learningPath": "software",
         "trainer": "Ed",
-        "finishDate": "26/05/22",
+        "trainingFinishDate": "26/05/22",
         "modules": {
             "name": "Module C",
             "status": "PASSED"
