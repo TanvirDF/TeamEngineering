@@ -11,8 +11,9 @@ const DBUtils = require("./utils/DBUtils")
 //changed names to be clearer
 const graduateRouter = require('./routes/graduate.routes.js');
 const trainingRouter = require('./routes/training.routes.js');
-const personalStory = require('./routes/personalStory.routes.js');
+const personalStoryRouter = require('./routes/personalStory.routes.js');
 const informationRouter = require('./routes/information.routes.js');
+const loginRouter = require("./src/routes/login.routes.js");
 
 //Configuring path regardless of .env
 dotenv.config({ path: `.env.${process.env.NODE_ENV}` })
@@ -36,10 +37,19 @@ app.use(express.static("public"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.use((_, res, next) => {
+  res.header(
+    `Access-Control-Allow-Headers`,
+    `x-access-token, Origin, Content-Type, Accept`
+  );
+  next();
+});
+
 app.use('/graduate', graduateRouter)
-app.use('/personalStory', personalStory)
+app.use('/personalStory', personalStoryRouter)
 app.use('/training', trainingRouter);
 app.use('/information', informationRouter)
+app.use("/login", loginRouter);
 
 //Connecting to the data base
 DBUtils.connect(db);
