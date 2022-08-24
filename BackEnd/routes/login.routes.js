@@ -1,12 +1,11 @@
 const express = require("express");
 const { validationResult } = require("express-validator");
 const bcrypt = require("bcrypt");
-const jwt = require("jsonwebtoken");
-const JWTService = require("../../utils/JWTUtils");
+const JWTUtils = require("../utils/JWTUtils");
 
-// const validateLogin = require("../../middleware/validateLogin.js");
+const validateLogin = require("../middleware/validateLogin.js");
 
-const Graduate = require("../../models/graduate.model.js");
+const Graduate = require("../models/graduate.model.js");
 
 const router = express.Router();
 
@@ -31,14 +30,11 @@ router.post("/login", validateLogin, async (req, res) => {
     });
   }
 
-  const { JWT_SECRET } = process.env;
-
-//   const token = jwt.sign({ id: exists._id }, JWT_SECRET, { expiresIn: 86400 });
-  const token = JWTService.generateAccessToken(exists._id);
+  const token = JWTUtils.generateAccessToken(exists._id);
 
   return res.status(200).send({
     message: "Login successful",
-    payload: { role: exists.role, accessToken: token }
+    payload: { accessToken: token }
   });
 
 });

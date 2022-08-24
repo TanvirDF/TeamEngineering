@@ -13,7 +13,7 @@ const graduateRouter = require('./routes/graduate.routes.js');
 const trainingRouter = require('./routes/training.routes.js');
 const personalStoryRouter = require('./routes/personalStory.routes.js');
 const informationRouter = require('./routes/information.routes.js');
-const loginRouter = require("./src/routes/login.routes.js");
+const loginRouter = require("./routes/login.routes.js");
 
 //Configuring path regardless of .env
 dotenv.config({ path: `.env.${process.env.NODE_ENV}` })
