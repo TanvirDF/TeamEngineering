@@ -10,14 +10,17 @@
     gap: 30%;
     border-radius: 5px;
     color: rgb(0, 20, 80);
+    
 
 }
 
 .Basic-info {
+
     line-height: 100%;
     min-width: 20%;
     color: rgb(0, 20, 80);
     text-align: left;
+
 
 
 }

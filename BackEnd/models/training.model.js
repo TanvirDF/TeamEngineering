@@ -29,7 +29,7 @@ const trainingSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    finishDate: {
+    trainingFinishDate: {
         type: String,
         required: true
     },
