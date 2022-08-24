@@ -8,8 +8,8 @@ import axios from "axios";
 // import '.../CSS/home.css'
 
 
-import { useEffect, useState } from 'react';
-import axios from 'axios';
+// import { useEffect, useState } from 'react';
+// import axios from 'axios';
 // import FullProfile from './component/FullProfile';
 
 
@@ -47,13 +47,13 @@ const Homepage = () => {
 
     }
 
-    return ( 
+    return (
         <div>
             <Profile profileData={profileData} />
-            <Information  />
-            <Training trainingData={trainingData } />
-  </div>
-    };
+            <Information />
+            <Training trainingData={trainingData} />
+        </div>
+    );
 
 
 
@@ -101,12 +101,12 @@ const Homepage = () => {
 
 
 
-    
-    )
+
+    // )
 
 
 
 
 }
 
-export default Homepage; 
+export default Homepage
