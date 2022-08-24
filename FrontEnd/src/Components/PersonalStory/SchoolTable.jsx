@@ -24,8 +24,8 @@ const SchoolTable = () => {
           </tr>
         </thead>
         <tbody>
-          {schools.map((school) =>
-          <tr>
+          {schools.map((school, index) =>
+          <tr key={index}>
             <td>{school.schooling.school}</td>
             <td>{school.schooling.examType}</td>
             <td>{school.schooling.subject}</td>

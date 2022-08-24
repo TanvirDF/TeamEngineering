@@ -22,8 +22,8 @@ const PortfolioTable = () => {
           </tr>
         </thead>
         <tbody>
-          {portfolios.map((portfolio) =>
-          <tr>
+          {portfolios.map((portfolio, index) =>
+          <tr key={index}>
             <td>{portfolio.portfolio.title}</td>
             <td>{portfolio.portfolio.url}</td>
             <td>{portfolio.portfolio.year}</td>

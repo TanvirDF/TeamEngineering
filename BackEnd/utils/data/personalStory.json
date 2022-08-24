@@ -35,6 +35,28 @@
                 "weight": "M",
                 "priority": "3"
             }
+        ],
+        "certificate": [
+            {
+                "type": "Certificate",
+                "issuer": "Oracle",
+                "awards": "Oracle Java SE",
+                "grade": "Distinction",
+                "year": "2021",
+                "weight": "L",
+                "priority": "7",
+                "description": ""
+            }
+        ],
+        "portfolio": [
+            {
+                "title": "Applications",
+                "url": "https://github.com",
+                "year": "2021",
+                "weight": "L",
+                "priority": "9",
+                "description": "A motivational talk I delivered"
+            }
         ]
     },
     {
@@ -71,6 +93,28 @@
                 "toDate": "2015-08-23",
                 "weight": "S",
                 "priority": "4"
+            }
+        ],
+        "certificate": [
+            {
+                "type": "Certificate",
+                "issuer": "Oracle",
+                "awards": "Oracle Java SE",
+                "grade": "Distinction",
+                "year": "2021",
+                "weight": "L",
+                "priority": "7",
+                "description": ""
+            }
+        ],
+        "portfolio": [
+            {
+                "title": "How to Identify opportunities",
+                "url": "https://mysite/howt",
+                "year": "2021",
+                "weight": "L",
+                "priority": "9",
+                "description": "A motivational talk I delivered"
             }
         ]
     },
@@ -109,6 +153,28 @@
                 "toDate": "2018-06-12",
                 "weight": "M",
                 "priority": "3"
+            }
+        ],
+        "certificate": [
+            {
+                "type": "Certificate",
+                "issuer": "IBM skillshare",
+                "awards": "Agile Explorer",
+                "grade": "Distinction",
+                "year": "2021",
+                "weight": "L",
+                "priority": "7",
+                "description": ""
+            }
+        ],
+        "portfolio": [
+            {
+                "title": "How to Identify opportunities",
+                "url": "https://mywebsite/howt",
+                "year": "2021",
+                "weight": "L",
+                "priority": "9",
+                "description": "A motivational talk I delivered"
             }
         ]
     }

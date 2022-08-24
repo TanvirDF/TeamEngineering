@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import data from './personalStory.json'
+// import data from './personalStory.json'
 // import '../'
 
 const CertificatesTable = ({ profileData }) => {
@@ -25,17 +25,18 @@ const CertificatesTable = ({ profileData }) => {
             </tr>
           </thead>
           <tbody>
-            {profileData.map((certificate) =>
-              <tr>
-                <td>{certificate.awards.type}</td>
-                <td>{certificate.awards.employer}</td>
-                <td>{certificate.awards.position}</td>
-                <td>{certificate.awards.fromDate}</td>
-                <td>{certificate.awards.toDate}</td>
-                <td>{certificate.awards.weight}</td>
-                <td>{certificate.awards.priority}</td>
-                <td>{certificate.awards.description}</td>
-              </tr>)}
+            {profileData.map((certificate,index) =>
+              <tr key={index}>
+                <td>{certificate.type}</td>
+                <td>{certificate.employer}</td>
+                <td>{certificate.position}</td>
+                <td>{certificate.fromDate}</td>
+                <td>{certificate.toDate}</td>
+                <td>{certificate.weight}</td>
+                <td>{certificate.priority}</td>
+                <td>{certificate.description}</td>
+              </tr>
+            )}
 
           </tbody>
         </table>

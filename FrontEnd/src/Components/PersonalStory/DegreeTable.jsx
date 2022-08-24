@@ -25,8 +25,8 @@ const DegreeTable = () => {
           </tr>
         </thead>
         <tbody>
-          {degrees.map((degree) =>
-          <tr>
+          {degrees.map((degree, index) =>
+          <tr key={index}>
             <td>{degree.degrees.university}</td>
             <td>{degree.degrees.subject}</td>
             <td>{degree.degrees.level}</td>

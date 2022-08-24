@@ -24,8 +24,8 @@ const WorkTable = () => {
           </tr>
         </thead>
         <tbody>
-          {works.map((work) =>
-          <tr>
+          {works.map((work, index) =>
+          <tr key={index}>
             <td>{work.work.type}</td>
             <td>{work.work.employer}</td>
             <td>{work.work.position}</td>
