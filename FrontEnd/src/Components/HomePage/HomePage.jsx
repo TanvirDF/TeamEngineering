@@ -44,10 +44,10 @@ const Homepage = () => {
     }
     const getTrainingData = async () => {
         try {
-            // console.log('Hello from training');
-            const res = await axios.get('http://localhost:4000/training/8080');
+            console.log('Hello from training');
+            const res = await axios.get('http://localhost:4000/training/1234');
             setTrainingData(res.data)
-            // console.log(res.data)
+            console.log(res.data)
         }
         catch (e) {
             console.log(e);
@@ -56,10 +56,10 @@ const Homepage = () => {
 
     const getInformationData = async () => {
         try {
-            console.log('Hello from information');
+            // console.log('Hello from information');
             const res = await axios.get('http://localhost:4000/information/1234');
             setInformationData(res.data);
-            console.log(res.data);
+            // console.log(res.data);
         }
         catch (e) {
             console.log(e);
@@ -70,7 +70,7 @@ const Homepage = () => {
         <div>
             <Profile profileData={profileData} />
             <Training trainingData={trainingData} />
-            <Information informationDat={informationData} />
+            <Information informationData={informationData} />
         </div>
 
 

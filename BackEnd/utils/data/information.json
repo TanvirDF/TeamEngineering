@@ -5,6 +5,18 @@
             {
                 "name": "badge1",
                 "description": "ABC1"
+            },
+            {
+                "name": "badge2",
+                "description": "ABD5"
+            },
+            {
+                "name": "badge3",
+                "description": "ACF5"
+            },
+            {
+                "name": "badge4",
+                "description": "ABE3"
             }
         ],
         "scores": [
@@ -35,7 +47,7 @@
         "userId": "9012",
         "badges": [
             {
-                "name": "badge 3",
+                "name": "badge3",
                 "description": "ABC1"
             }
         ],

@@ -3,7 +3,7 @@ import React from 'react';
 
 
 
-const ProfileBadge = ({ badgeName, badgeDescription }) => {
+const ProfileBadge = ({ informationData }) => {
     return (
         // <div className='info-container'>
         //     <div><h1>Your Information</h1></div>
@@ -11,10 +11,14 @@ const ProfileBadge = ({ badgeName, badgeDescription }) => {
         //         <div className='h3'><h3>Badges:</h3></div>
         //         <div className='badge-holder'>
         //             <div className='holder'>
-        <div className='badge'>
-            <h2>{badgeName}  </h2>
-            <p>{badgeDescription}</p>
-        </div>
+        <>
+            {informationData?.badges?.map((badge, index) => (
+                <div className='badge' key={index}>
+                    <h2>{badge.name}  </h2>
+                    <p>{badge.description}</p>
+                </div>
+            ))}
+        </>
     );
 
 

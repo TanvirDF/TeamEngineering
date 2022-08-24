@@ -5,10 +5,18 @@
         "learningPath": "cloud",
         "trainer": "Ryan",
         "finishDate": "26/05/22",
-        "modules": {
-            "name": "Module A",
-            "status": "PASSED"
-        }
+        "modules": [
+            {
+                "name": "Module 1",
+                "challenge": "Challenge A",
+                "status": "PASSED"
+            },
+            {
+                "name": "Module 1",
+                "challenge": "Challenge B",
+                "status": "TODO"
+            }
+        ]
     },
     {
         "userId": "5678",
@@ -16,10 +24,13 @@
         "learningPath": "data",
         "trainer": "Lisa",
         "finishDate": "26/05/22",
-        "modules": {
-            "name": "Module B",
-            "status": "PASSED"
-        }
+        "modules": [
+            {
+                "name": "Module 1",
+                "challenge": "Challenge B",
+                "status": "TODO"
+            }
+        ]
     },
     {
         "userId": "9012",
@@ -27,9 +38,12 @@
         "learningPath": "software",
         "trainer": "Ed",
         "finishDate": "26/05/22",
-        "modules": {
-            "name": "Module C",
-            "status": "PASSED"
-        }
+        "modules": [
+            {
+                "name": "Module 2",
+                "challenge": "Challenge C",
+                "status": "PASSED"
+            }
+        ]
     }
 ]
