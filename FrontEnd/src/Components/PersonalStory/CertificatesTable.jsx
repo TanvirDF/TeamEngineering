@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import data from './personalStory.json'
+
 // import '../'
 
-const CertificatesTable = () => {
-
-  const [certificates, setCertificates] = useState(data);
-
+const CertificatesTable = ({props}) => {
+  
+  const [certificates, setCertificates] = useState();
+  const { type, employer, position, fromDate, toDate, weight, priority, description} = props
   return (
     
     <>
@@ -25,16 +25,16 @@ const CertificatesTable = () => {
           </tr>
         </thead>
         <tbody>
-          {certificates.map((certificate) =>
+          {certificates.map((props) =>
           <tr>
-            <td>{certificate.awards.type}</td>
-            <td>{certificate.awards.employer}</td>
-            <td>{certificate.awards.position}</td>
-            <td>{certificate.awards.fromDate}</td>
-            <td>{certificate.awards.toDate}</td>
-            <td>{certificate.awards.weight}</td>
-            <td>{certificate.awards.priority}</td>
-            <td>{certificate.awards.description}</td>
+            <td>{props.type}</td>
+            <td>{props.employer}</td>
+            <td>{props.position}</td>
+            <td>{props.fromDate}</td>
+            <td>{props.toDate}</td>
+            <td>{props.weight}</td>
+            <td>{props.priority}</td>
+            <td>{props.description}</td>
           </tr>)}
           
         </tbody>

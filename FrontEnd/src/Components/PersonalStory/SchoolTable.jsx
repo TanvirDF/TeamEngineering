@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import data from './personalStory.json'
+
 
 const SchoolTable = () => {
 
-  const [schools, setSchools] = useState(data);
+  const [schools, setSchools] = useState();
 
   return (
     

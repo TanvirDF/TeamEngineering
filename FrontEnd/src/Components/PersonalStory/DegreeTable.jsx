@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import data from './personalStory.json'
+
 
 const DegreeTable = () => {
 
-  const [degrees, setDegrees] = useState(data);
+  const [degrees, setDegrees] = useState();
 
   return (
     
