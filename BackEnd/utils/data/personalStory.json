@@ -73,7 +73,7 @@
                 "priority": "4"
             }
         ]
-
+    },
     {
         "userId": "1245",
         "degrees": [
@@ -110,6 +110,6 @@
                 "weight": "M",
                 "priority": "3"
             }
-       ]
+        ]
     }
 ]
