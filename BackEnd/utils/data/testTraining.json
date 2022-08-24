@@ -5,10 +5,12 @@
         "learningPath": "cloud",
         "trainer": "Ryan",
         "finishDate": "26/05/22",
-        "modules": {
-            "name": "Module A",
-            "status": "PASSED"
-        }
+        "modules": [
+            {
+                "name": "Module A",
+                "status": "PASSED"
+            }
+        ]
     },
     {
         "userId": "5678",
@@ -16,10 +18,12 @@
         "learningPath": "data",
         "trainer": "Lisa",
         "finishDate": "26/05/22",
-        "modules": {
-            "name": "Module B",
-            "status": "PASSED"
-        }
+        "modules": [
+            {
+                "name": "Module B",
+                "status": "PASSED"
+            }
+        ]
     },
     {
         "userId": "9012",
@@ -27,9 +31,11 @@
         "learningPath": "software",
         "trainer": "Ed",
         "finishDate": "26/05/22",
-        "modules": {
-            "name": "Module C",
-            "status": "PASSED"
-        }
+        "modules": [
+            {
+                "name": "Module C",
+                "status": "PASSED"
+            }
+        ]
     }
 ]

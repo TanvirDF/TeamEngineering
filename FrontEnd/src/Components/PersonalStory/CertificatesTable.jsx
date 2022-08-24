@@ -2,7 +2,7 @@ import { useState } from 'react';
 import data from './personalStory.json'
 // import '../'
 
-const CertificatesTable = ({ profileData }) => {
+const CertificatesTable = ({ certificate }) => {
 
   //const [certificates, setCertificates] = useState(data);
 
@@ -25,16 +25,16 @@ const CertificatesTable = ({ profileData }) => {
             </tr>
           </thead>
           <tbody>
-            {profileData.map((certificate) =>
+            {certificate?.map((certificate) =>
               <tr>
-                <td>{certificate.awards.type}</td>
-                <td>{certificate.awards.employer}</td>
-                <td>{certificate.awards.position}</td>
-                <td>{certificate.awards.fromDate}</td>
-                <td>{certificate.awards.toDate}</td>
-                <td>{certificate.awards.weight}</td>
-                <td>{certificate.awards.priority}</td>
-                <td>{certificate.awards.description}</td>
+                <td>{certificate.type}</td>
+                <td>{certificate.issuer}</td>
+                <td>{certificate.awards}</td>
+                <td>{certificate.grade}</td>
+                <td>{certificate.year}</td>
+                <td>{certificate.weight}</td>
+                <td>{certificate.priority}</td>
+                <td>{certificate.description}</td>
               </tr>)}
 
           </tbody>

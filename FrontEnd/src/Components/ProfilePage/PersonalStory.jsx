@@ -12,11 +12,11 @@ const PersonalStory = ({ profileData }) => {
 
     return (
         <>
-            <DegreeTable />
-            <SchoolTable />
-            <WorkTable />
-            <CertificatesTable profileData={profileData} />
-            <PortfolioTable />
+            <DegreeTable degrees={profileData.degrees} />
+            <SchoolTable schooling={profileData.schooling} />
+            <WorkTable work={profileData.work} />
+            <CertificatesTable certificate={profileData.certificate} />
+            <PortfolioTable portfolio={profileData.portfolio} />
         </>
 
     )
