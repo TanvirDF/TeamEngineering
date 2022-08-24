@@ -26,9 +26,13 @@ router.route('/:id').get((req, res) => {
 
                 personalStory.save().then(personalStory => {
                     res.send('data updated')
-                })
+                }).catch(
+                    () => {
+                        res.status(400).send(`Error`)
+                    }
+                )
             } else {
-                res.status(404).send(`not found ${error}`)
+                res.status(404).send(`info not found ${error}`)
             }
         })
 

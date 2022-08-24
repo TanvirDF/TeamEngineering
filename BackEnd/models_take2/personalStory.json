@@ -1,0 +1,103 @@
+[
+    {
+        "userId": "1234",
+        "degrees": {
+            "university": "Harvard",
+            "subject": "Law",
+            "level": "Bachelor's",
+            "grade": "3.0",
+            "fromDate": "2012-09-01",
+            "toDate": "2016-06-30",
+            "weight": "XL",
+            "priority": "1",
+            "description": "Minored in French Language"
+        },
+        "schooling": {
+            "school": "Eton",
+            "examType": "A-Level",
+            "subject": "History",
+            "grade": "A*",
+            "year": "2012",
+            "weight": "L",
+            "priority": "2"
+        },
+        "work": {
+            "type": "Work Experience",
+            "employer": "The King's Hound",
+            "position": "Bartender",
+            "fromDate": "2017-01-09",
+            "toDate": "2018-06-12",
+            "weight": "M",
+            "priority": "3"
+        },
+        "awards": {},
+        "portfolio": {}
+    },
+    {
+        "userId": "5678",
+        "degrees": {
+            "university": "Temple University",
+            "subject": "Photography",
+            "level": "Bachelor's",
+            "grade": "4.0",
+            "fromDate": "2013-09-01",
+            "toDate": "2017-06-30",
+            "weight": "XL",
+            "priority": "1"
+        },
+        "schooling": {
+            "school": "North Side Prep",
+            "examType": "AP",
+            "subject": "Calculus BC",
+            "grade": "5",
+            "year": "2013",
+            "weight": "L",
+            "priority": "2"
+        },
+        "work": {
+            "type": "Work Experience",
+            "employer": "Skokie Waterpark",
+            "position": "Lifeguard",
+            "fromDate": "2015-05-10",
+            "toDate": "2015-08-23",
+            "weight": "S",
+            "priority": "4"
+        },
+        "awards": {},
+        "portfolio": {}
+    },
+    {
+        "userId": "1234",
+        "degrees": {
+            "university": "Harvard",
+            "subject": "Law",
+            "level": "Bachelor's",
+            "grade": "3.0",
+            "fromDate": "2012-09-01",
+            "toDate": "2016-06-30",
+            "weight": "XL",
+            "priority": "1",
+            "description": "Minored in French Language"
+        },
+        "schooling": {
+            "school": "Eton",
+            "examType": "A-Level",
+            "subject": "History",
+            "grade": "A*",
+            "year": "2012",
+            "weight": "L",
+            "priority": "2"
+        },
+        "work": {
+            "type": "Work Experience",
+            "employer": "The King's Hound",
+            "position": "Bartender",
+            "fromDate": "2017-01-09",
+            "toDate": "2018-06-12",
+            "weight": "M",
+            "priority": "3"
+        },
+        "awards": {},
+        "portfolio": {}
+    }
+]

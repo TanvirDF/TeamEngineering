@@ -1,14 +1,6 @@
-import '../../CSS/EditPI.css'
-import { useState } from 'react'
-
+import '../CSS/EditPI.css'
 
 const EditPI = () => {
-    const [img, setImage] = useState();
-    const onImageChange = (e) => {
-        const [file] = e.target.files;
-        setImage(URL.createObjectURL(file));
-    }
-
     return (
         <div className="Whole-editpi">
             <div className="edit-info">
@@ -248,17 +240,8 @@ const EditPI = () => {
                     <option value="Entertainer">Entertainer</option>
                     <option value="Entrepreneur">Entrepreneur</option>
                 </select>
-
-
             </form>
-            <div className="Add-Image">
-                <img className="profile-picture" src={img} alt="" />
-                <br />
-                <br />
-                {/* <h5>Please select your profile image:</h5> */}
-                <input type="file" onChange={onImageChange} />
-            </div>
-
+            <img className="profile-picture" src="" alt="Selfie Upload" />
 
         </div>
     )

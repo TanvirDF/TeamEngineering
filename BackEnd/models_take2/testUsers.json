@@ -1,0 +1,31 @@
+[
+    {
+        "userId": "1234",
+        "name": "James White",
+        "personalEmail": "jwhite@gmail.com",
+        "dfEmail": "jameswhite@df.com",
+        "github": "jwhite@github.com",
+        "phone": "07864532789",
+        "gender": "Male",
+        "nationality": "British"
+    },
+    {
+        "userId": "5678",
+        "name": "Missy Eliott",
+        "personalEmail": "melliott@gmail.com",
+        "dfEmail": "missyeliotte@df.com",
+        "github": "reverseit@github.com",
+        "linkedin": "Missy Eliott",
+        "gender": "Female",
+        "nationality": "American"
+    },
+    {
+        "userId": "9012",
+        "name": "Victor Hugo",
+        "personalEmail": "vichug@aol.com",
+        "dfEmail": "victorhugo@df.com",
+        "gender": "Male",
+        "nationality": "French"
+    }
+]
+    
