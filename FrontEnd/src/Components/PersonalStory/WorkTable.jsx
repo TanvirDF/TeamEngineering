@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import data from './personalStory.json'
-
+import moment from 'moment'
 const WorkTable = ({ work }) => {
 
 
@@ -29,8 +29,8 @@ const WorkTable = ({ work }) => {
                 <td>{work.type}</td>
                 <td>{work.employer}</td>
                 <td>{work.position}</td>
-                <td>{work.fromDate}</td>
-                <td>{work.toDate}</td>
+                <td>{moment(work.fromDate).format('l')}</td>
+                <td>{moment(work.toDate).format('l')}</td>
                 <td>{work.weight}</td>
                 <td>{work.priority}</td>
                 <td>{work.description}</td>

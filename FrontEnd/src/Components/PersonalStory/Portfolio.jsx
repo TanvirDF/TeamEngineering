@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import data from './personalStory.json'
-
+import moment from 'moment'
 const PortfolioTable = ({ portfolio }) => {
 
 
@@ -25,7 +25,7 @@ const PortfolioTable = ({ portfolio }) => {
               <tr key={index}>
                 <td>{portfolio.title}</td>
                 <td>{portfolio.url}</td>
-                <td>{portfolio.year}</td>
+                <td>{moment(portfolio.year).format('l')}</td>
                 <td>{portfolio.weight}</td>
                 <td>{portfolio.priority}</td>
                 <td>{portfolio.description}</td>

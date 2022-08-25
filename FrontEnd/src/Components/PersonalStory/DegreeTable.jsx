@@ -1,5 +1,5 @@
 import '../../CSS/tables.css'
-
+import moment from 'moment'
 const DegreeTable = ({ degrees }) => {
 
 
@@ -29,8 +29,8 @@ const DegreeTable = ({ degrees }) => {
                 <td>{degree.subject}</td>
                 <td>{degree.level}</td>
                 <td>{degree.grade}</td>
-                <td>{degree.fromDate}</td>
-                <td>{degree.toDate}</td>
+                <td>{moment(degree.fromDate).format('l')}</td>
+                <td>{moment(degree.toDate).format('l')}</td>
                 <td>{degree.weight}</td>
                 <td>{degree.priority}</td>
                 <td>{degree.description}</td>
