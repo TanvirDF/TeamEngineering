@@ -31,7 +31,7 @@ const ProfilePage = () => {
 
     return (
         <div>
-            <ProfileCompletion />
+            {/* <ProfileCompletion /> */}
             <EditPI />
             <PersonalStory profileData={profileData} />
         </div>

@@ -60,8 +60,8 @@ const Homepage = () => {
         <div>
             <Profile profileData={profileData} />
 
-           <Information informationData={informationData} />
             <Training trainingData={trainingData } />
+           <Information informationData={informationData} />
   </div>
     )
 }

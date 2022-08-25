@@ -33,14 +33,15 @@
     flex-direction: column;
     min-width: auto;
     width:80%;
-    border: 5px solid rgb(0, 20, 80);
+    box-shadow: 0 0 2em rgb(143, 155, 219);
     padding: 5%;
     margin: 20px;
     margin-left: 10%;
     margin-right: 10%;
     gap: 30%;
-    border-radius: 5px;
+    border-radius: 25px;
     color: rgb(0, 20, 80);
+    background: whitesmoke;
     
 }
 .storybox h4{
