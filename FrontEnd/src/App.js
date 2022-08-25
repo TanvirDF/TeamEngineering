@@ -15,17 +15,17 @@ function App() {
 
 
   return (
-    <div className='page'> 
-    <Router>
-      <Header />
-      <Routes>
-        <>
-          <Route path='/login' element={<LogIn />} />
-          <Route path='/' element={<Homepage />} />
-          <Route path='/profilepage' element={<ProfilePage />} />
-        </>
-      </Routes>
-      <Footer />
+    <div className='page'>
+      <Router>
+        <Header />
+        <Routes>
+          <>
+            {/* <Route path='/login' element={<LogIn />} /> */}
+            <Route path='/' element={<Homepage />} />
+            <Route path='/profilepage' element={<ProfilePage />} />
+          </>
+        </Routes>
+        <Footer />
       </Router>
     </div>
   );
