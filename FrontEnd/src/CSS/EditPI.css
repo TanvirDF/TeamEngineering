@@ -12,12 +12,14 @@
 .Whole-editpi {
     display: flex;
     flex-direction: row;
-    border: 5px solid rgb(0, 20, 80);
-    margin: 20px;
+    box-shadow: 0 0 2em rgb(143, 155, 219);
+    margin: 40px;
     margin-left: 10%;
     margin-right: 10%;
     padding: 5%;
     gap: 10%;
+    background: whitesmoke;
+    border-radius: 25px;
 
 }
 

@@ -59,29 +59,15 @@ const Homepage = ({ id }) => {
     return (
         <div>
             <Profile profileData={profileData} />
-            <Training trainingData={trainingData} />
-            <Information informationData={informationData} />
-        </div>
-
+            <Training trainingData={trainingData } />
+           <Information informationData={informationData} />
+  </div>
     )
 }
 
 
 
 
-
-// const getData = async () => {
-//     try {
-//         console.log('Hello');
-//         const res = await axios.get('http://localhost:4000/graduate/1234');
-//         setInformationData(res.data);
-
-//         console.log(res.data);
-//     }
-//     catch (e) {
-//         console.log(e);
-//     }
-// }
 
 
 export default Homepage; 

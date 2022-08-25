@@ -9,11 +9,9 @@
 }
 
 .loginHolder {
-    background-color: white;
+    background-color: whitesmoke;
     padding-top: 100px;
-    /* padding-left: 10%;
-    padding-right: 10%; */
-    height: 75vh;
+    height: 90vh;
     width: 32%;
     border-radius: 5px;
     border-radius: 20px;
