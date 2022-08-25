@@ -6,14 +6,6 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 
-// import '.../CSS/home.css'
-
-
-// import { useEffect, useState } from 'react';
-// import axios from 'axios';
-// import FullProfile from './component/FullProfile';
-
-
 
 
 
@@ -39,15 +31,13 @@ const Homepage = () => {
         catch (e) {
             console.log(e);
         }
-
-
     }
     const getTrainingData = async () => {
         try {
-            // console.log('Hello from training');
-            const res = await axios.get('http://localhost:4000/training/8080');
+            console.log('Hello from training');
+            const res = await axios.get('http://localhost:4000/training/1234');
             setTrainingData(res.data)
-            // console.log(res.data)
+            console.log(res.data)
         }
         catch (e) {
             console.log(e);
@@ -56,10 +46,10 @@ const Homepage = () => {
 
     const getInformationData = async () => {
         try {
-            console.log('Hello from information');
+            // console.log('Hello from information');
             const res = await axios.get('http://localhost:4000/information/1234');
             setInformationData(res.data);
-            console.log(res.data);
+            // console.log(res.data);
         }
         catch (e) {
             console.log(e);
@@ -69,59 +59,13 @@ const Homepage = () => {
     return (
         <div>
             <Profile profileData={profileData} />
-            <Information  />
+
+           <Information informationData={informationData} />
             <Training trainingData={trainingData } />
   </div>
-    )};
+    )
+}
 
 
-
-        // )
-
-    // const getData = async () => {
-    //     try {
-    //         const res = await axios.get('http://localhost:3000/info');
-    //         setInformationData(res.data.data);
-    //         // console.log(res.data.data);
-    //     }
-    //     catch (e) {
-    //         console.log(e);
-    //     }
-    // };
-
-
-
-    // const getTrainingData = async () => {
-    //     try {
-    //         const res = await axios.get('http://localhost:4000/info%27');
-    //         setTrainingData(res.data.data)
-    //         console.log(res.data.data)
-    //     }
-    //     catch (e) {
-    //         console.log(e);
-    //     }
-    // }
-
-
-
-
-
-    // const getData = async () => {
-    //     try {
-    //         console.log('Hello');
-    //         const res = await axios.get('http://localhost:4000/graduate/1234');
-    //         setInformationData(res.data);
-
-    //         console.log(res.data);
-    //     }
-    //     catch (e) {
-    //         console.log(e);
-    //     }
-    // }
-
-
-
-    
-    
 
 export default Homepage; 

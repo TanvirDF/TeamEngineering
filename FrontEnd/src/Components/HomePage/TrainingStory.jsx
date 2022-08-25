@@ -1,12 +1,14 @@
-const TrainingStory = () => {
+const TrainingStory = ({ trainingData }) => {
     return (
+        <>
 
-        <div className="module-info" data-testId="trainingstory">
-            <p>Module 1, Challenge A: PASSED</p>
-            <p>Module 1, Challenge B: PASSED</p>
-            <p>Module 2, Challenge C: TODO</p>
+            <div className="module-info" data-testId="trainingstory" >
+                {trainingData.modules?.map((module, index) => (
+                    <p key={index}>{module.name} , {module.challenge} :  {module.status}</p>
+                ))}
+            </div >
 
-        </div >
+        </>
     )
 }
 export default TrainingStory;
