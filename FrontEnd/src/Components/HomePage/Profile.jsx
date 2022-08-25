@@ -39,7 +39,7 @@ const Profile = ({ profileData }) => {
                 <div className="title">
                     <h1 >Your profile</h1>
                     <br />
-                    <button type="submit" id="edit-button"><a className="link" href="/profilepage">Edit</a></button>
+                    <button type="submit" id="edit-button"><a className="link" href="/edit">Edit</a></button>
                 </div >
                 <div className="info-boxes">
                     <p><strong>Name:  </strong>{name} </p>

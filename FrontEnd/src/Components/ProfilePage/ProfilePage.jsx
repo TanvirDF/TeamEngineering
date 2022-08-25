@@ -32,8 +32,8 @@ const ProfilePage = ({ id }) => {
     return (
         <div>
             {/* <ProfileCompletion /> */}
-            <EditPI />
-            <PersonalStory profileData={profileData} />
+            <EditPI id={id} />
+            <PersonalStory profileData={profileData} id={id} />
         </div>
     )
 }
