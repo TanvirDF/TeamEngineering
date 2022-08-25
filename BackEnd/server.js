@@ -4,6 +4,7 @@ const dotenv = require("dotenv");
 //extra imports for the development environment
 const morgan = require("morgan");
 const cors = require("cors");
+const bodyParser = require("body-parser");
 
 //A file consisting of DB utility functions, mongoose is imported here
 const DBUtils = require("./utils/DBUtils")
@@ -31,6 +32,7 @@ if (NODE_ENV === "development") app.use(morgan("dev"));
 
 //Allows for better security when for connecting to server
 app.use(cors());
+app.use(bodyParser.json());
 //Allows for static files to be shown i.e. images, will be useful later
 app.use(express.static("public"));
 //Allows for checking of incoming data form POST or PUT requests i.e. makes sure it is a json object or strings and arrays
