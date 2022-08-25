@@ -19,7 +19,6 @@ const PersonalStory = ({ profileData }) => {
             <CertificatesTable certificate={profileData.certificate} />
             <PortfolioTable portfolio={profileData.portfolio} />
         </div>
-
     )
 }
 

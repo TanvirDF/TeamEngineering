@@ -4,8 +4,7 @@ import Training from "./Training";
 import Information from "./Information";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { useParams } from 'react-router-dom';
-
+// import { useParams } from 'react-router-dom';
 
 
 
@@ -28,7 +27,6 @@ const Homepage = ({ id }) => {
         try {
             // console.log('Hello from profile');
             const res = await axios.get(`http://localhost:4000/graduate/${id}`);
-
             setProfileData(res.data);
             // console.log(res.data);
         }
@@ -38,11 +36,10 @@ const Homepage = ({ id }) => {
     }
     const getTrainingData = async () => {
         try {
-            console.log('Hello from training');
+            // console.log('Hello from training');
             const res = await axios.get(`http://localhost:4000/training/${id}`);
-
             setTrainingData(res.data)
-            console.log(res.data)
+            // console.log(res.data)
         }
         catch (e) {
             console.log(e);
@@ -53,7 +50,6 @@ const Homepage = ({ id }) => {
         try {
             // console.log('Hello from information');
             const res = await axios.get(`http://localhost:4000/information/${id}`);
-
             setInformationData(res.data);
             // console.log(res.data);
         }
@@ -70,9 +66,6 @@ const Homepage = ({ id }) => {
         </div>
     )
 }
-
-
-
 
 
 

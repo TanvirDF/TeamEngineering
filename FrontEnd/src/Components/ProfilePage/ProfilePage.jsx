@@ -11,7 +11,6 @@ const ProfilePage = () => {
     const [profileData, setProfileData] = useState([]);
 
 
-
     useEffect(() => {
         getProfileData();
     }, []);
@@ -29,9 +28,9 @@ const ProfilePage = () => {
     }
 
 
+
     return (
         <div>
-            {/* <ProfileCompletion /> */}
             <ProfileCompletion />
             <EditPI />
             <PersonalStory profileData={profileData} />
