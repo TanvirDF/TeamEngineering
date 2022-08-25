@@ -6,48 +6,52 @@ Object {
   "baseElement": <body>
     <div>
       <footer
-        class="bg-light text-center text-lg-start fixed-bottom"
+        class="bg-light text-center text-lg-start "
       >
         <div
           class="text-center p-3"
         >
-          © 2022 Copyright:
-          <a
-            class="text-dark"
-            href="https://digitalfutures.com/"
+          <span
+            class=" p-3"
           >
-            Digital Future
-          </a>
-        </div>
-        <div
-          class="social"
-        >
+            © 2022 Copyright:
+            <a
+              class="text-dark"
+              href="https://digitalfutures.com/"
+            >
+              Digital Futures
+            </a>
+          </span>
           <a
-            href="https://digitalfutures.com/"
+            class="p-1"
+            href="https://www.linkedin.com/company/digital-futures2021/"
           >
             <i
-              class="icon ion-social-instagram"
+              class="bi bi-linkedin"
             />
           </a>
           <a
-            href="https://digitalfutures.com/"
+            class="p-1"
+            href="https://www.instagram.com/digital_futures/?hl=en"
           >
             <i
-              class="icon ion-social-snapchat"
+              class="bi bi-instagram"
             />
           </a>
           <a
-            href="https://digitalfutures.com/"
+            class="p-1"
+            href="https://twitter.com/digitalfutures0"
           >
             <i
-              class="icon ion-social-twitter"
+              class="bi bi-twitter"
             />
           </a>
           <a
-            href="https://digitalfutures.com/"
+            class="p-1"
+            href="https://www.facebook.com/digital.futures2021/"
           >
             <i
-              class="icon ion-social-facebook"
+              class=" bi bi-facebook"
             />
           </a>
         </div>
@@ -56,48 +60,52 @@ Object {
   </body>,
   "container": <div>
     <footer
-      class="bg-light text-center text-lg-start fixed-bottom"
+      class="bg-light text-center text-lg-start "
     >
       <div
         class="text-center p-3"
       >
-        © 2022 Copyright:
-        <a
-          class="text-dark"
-          href="https://digitalfutures.com/"
+        <span
+          class=" p-3"
         >
-          Digital Future
-        </a>
-      </div>
-      <div
-        class="social"
-      >
+          © 2022 Copyright:
+          <a
+            class="text-dark"
+            href="https://digitalfutures.com/"
+          >
+            Digital Futures
+          </a>
+        </span>
         <a
-          href="https://digitalfutures.com/"
+          class="p-1"
+          href="https://www.linkedin.com/company/digital-futures2021/"
         >
           <i
-            class="icon ion-social-instagram"
+            class="bi bi-linkedin"
           />
         </a>
         <a
-          href="https://digitalfutures.com/"
+          class="p-1"
+          href="https://www.instagram.com/digital_futures/?hl=en"
         >
           <i
-            class="icon ion-social-snapchat"
+            class="bi bi-instagram"
           />
         </a>
         <a
-          href="https://digitalfutures.com/"
+          class="p-1"
+          href="https://twitter.com/digitalfutures0"
         >
           <i
-            class="icon ion-social-twitter"
+            class="bi bi-twitter"
           />
         </a>
         <a
-          href="https://digitalfutures.com/"
+          class="p-1"
+          href="https://www.facebook.com/digital.futures2021/"
         >
           <i
-            class="icon ion-social-facebook"
+            class=" bi bi-facebook"
           />
         </a>
       </div>
