@@ -9,7 +9,7 @@ import axios from "axios";
 
 
 
-const Homepage = () => {
+const Homepage = ({ id }) => {
 
     const [profileData, setProfileData] = useState([]);
     const [trainingData, setTrainingData] = useState([]);
@@ -24,7 +24,7 @@ const Homepage = () => {
     const getProfileData = async () => {
         try {
             // console.log('Hello from profile');
-            const res = await axios.get('http://localhost:4000/graduate/1234');
+            const res = await axios.get(`http://localhost:4000/graduate/${id}`);
             setProfileData(res.data);
             // console.log(res.data);
         }
@@ -35,7 +35,7 @@ const Homepage = () => {
     const getTrainingData = async () => {
         try {
             console.log('Hello from training');
-            const res = await axios.get('http://localhost:4000/training/1234');
+            const res = await axios.get(`http://localhost:4000/training/${id}`);
             setTrainingData(res.data)
             console.log(res.data)
         }
@@ -47,7 +47,7 @@ const Homepage = () => {
     const getInformationData = async () => {
         try {
             // console.log('Hello from information');
-            const res = await axios.get('http://localhost:4000/information/1234');
+            const res = await axios.get(`http://localhost:4000/information/${id}`);
             setInformationData(res.data);
             // console.log(res.data);
         }
@@ -59,12 +59,14 @@ const Homepage = () => {
     return (
         <div>
             <Profile profileData={profileData} />
-
             <Training trainingData={trainingData } />
            <Information informationData={informationData} />
   </div>
     )
 }
+
+
+
 
 
 
