@@ -4,12 +4,14 @@ import Training from "./Training";
 import Information from "./Information";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { useParams } from 'react-router-dom';
 
 
 
 
 
 const Homepage = () => {
+    const { id } = useParams();
 
     const [profileData, setProfileData] = useState([]);
     const [trainingData, setTrainingData] = useState([]);
@@ -24,7 +26,7 @@ const Homepage = () => {
     const getProfileData = async () => {
         try {
             // console.log('Hello from profile');
-            const res = await axios.get('http://localhost:4000/graduate/1234');
+            const res = await axios.get(`http://localhost:4000/graduate/1234`);
             setProfileData(res.data);
             // console.log(res.data);
         }
@@ -35,7 +37,7 @@ const Homepage = () => {
     const getTrainingData = async () => {
         try {
             console.log('Hello from training');
-            const res = await axios.get('http://localhost:4000/training/1234');
+            const res = await axios.get(`http://localhost:4000/training/1234`);
             setTrainingData(res.data)
             console.log(res.data)
         }
@@ -47,7 +49,7 @@ const Homepage = () => {
     const getInformationData = async () => {
         try {
             // console.log('Hello from information');
-            const res = await axios.get('http://localhost:4000/information/1234');
+            const res = await axios.get(`http://localhost:4000/information/1234`);
             setInformationData(res.data);
             // console.log(res.data);
         }
@@ -70,18 +72,18 @@ const Homepage = () => {
 
 
 
-    // const getData = async () => {
-    //     try {
-    //         console.log('Hello');
-    //         const res = await axios.get('http://localhost:4000/graduate/1234');
-    //         setInformationData(res.data);
+// const getData = async () => {
+//     try {
+//         console.log('Hello');
+//         const res = await axios.get('http://localhost:4000/graduate/1234');
+//         setInformationData(res.data);
 
-    //         console.log(res.data);
-    //     }
-    //     catch (e) {
-    //         console.log(e);
-    //     }
-    // }
+//         console.log(res.data);
+//     }
+//     catch (e) {
+//         console.log(e);
+//     }
+// }
 
 
 export default Homepage; 

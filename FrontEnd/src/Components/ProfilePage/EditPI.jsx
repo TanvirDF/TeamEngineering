@@ -1,5 +1,5 @@
 import '../../CSS/EditPI.css'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import axios from 'axios';
 
 const EditPI = () => {
@@ -53,7 +53,6 @@ const EditPI = () => {
     return (
         <div className="Whole-editpi">
             <form onSubmit={postProfile} className="form">
-                {/* <div className='row'> */}
                 <div className="edit-info">
                     <h1>Personal Information</h1>
                     <label htmlFor="fullName" >Name:</label>
@@ -300,7 +299,6 @@ const EditPI = () => {
                     <input type="file" onChange={onImageChange} />
                     <button type='submit' className='profileBtn'> Save Profile</button>
                 </div>
-                {/* </div> */}
             </form>
         </div>
     )
