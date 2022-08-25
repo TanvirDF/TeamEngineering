@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import data from './personalStory.json'
-
+import moment from 'moment'
 const SchoolTable = ({ schooling }) => {
 
   const schools = schooling
@@ -30,7 +30,7 @@ const SchoolTable = ({ schooling }) => {
                 <td>{school.examType}</td>
                 <td>{school.subject}</td>
                 <td>{school.grade}</td>
-                <td>{school.year}</td>
+                <td>{moment(school.year).format('l')}</td>
                 <td>{school.weight}</td>
                 <td>{school.priority}</td>
                 <td>{school.description}</td>
