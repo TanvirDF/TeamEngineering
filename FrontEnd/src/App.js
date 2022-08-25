@@ -17,17 +17,17 @@ function App() {
   const [id, setId] = useState('');
 
   return (
-    <div className='page'> 
-    <Router>
-      <Header />
-      <Routes>
-        <>
-          <Route path='/profile' element={<Homepage id={id} />} />
-          <Route path='/edit' element={<ProfilePage />} />
-          <Route path='/' element={<LogIn setId={setId} />} />
-        </>
-      </Routes>
-      <Footer />
+    <div className='page'>
+      <Router>
+        <Header />
+        <Routes>
+          <>
+            <Route path='/profile' element={<Homepage id={id} />} />
+            <Route path='/edit' element={<ProfilePage id={id} />} />
+            <Route path='/' element={<LogIn setId={setId} />} />
+          </>
+        </Routes>
+        <Footer />
       </Router>
     </div>
   );

@@ -6,19 +6,19 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 
-const ProfilePage = () => {
+const ProfilePage = ({ id }) => {
 
     const [profileData, setProfileData] = useState([]);
 
 
     useEffect(() => {
         getProfileData();
-    }, []);
+    }, [id]);
 
 
     const getProfileData = async () => {
         try {
-            const res = await axios.get('http://localhost:4000/personalStory/1234');
+            const res = await axios.get(`http://localhost:4000/personalStory/${id}`);
             setProfileData(res.data);
             console.log(res.data);
         }
