@@ -2,18 +2,18 @@ import '../../CSS/EditPI.css'
 import { useState } from 'react'
 import axios from 'axios'
 
-const EditPI = ({ id }) => {
+const EditPI = ({ profileData, id }) => {
 
     const [saveProfile, setSaveProfile] = useState({
-        name: ``,
-        personalEmail: ``,
-        dfEmail: ``,
-        github: ``,
-        linkedin: ``,
-        phone: ``,
-        gender: ``,
-        nationality: ``,
-        personality: ``
+        name: profileData.name,
+        personalEmail: profileData.personalEmail,
+        dfEmail: profileData.dfEmail,
+        github: profileData.github,
+        linkedin: profileData.linkedin,
+        phone: profileData.phone,
+        gender: profileData.gender,
+        nationality: profileData.nationality,
+        personality: profileData.personality
     })
 
 

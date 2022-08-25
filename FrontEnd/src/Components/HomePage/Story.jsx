@@ -15,8 +15,8 @@ const Story = ({ personalStory }) => {
                 {personalStory.work ?
                     <p> {personalStory.work.length} work experience</p> : <></>
                 }
-                {personalStory.awards ?
-                    <p>{personalStory.awards.length} personal achievements</p> : <></>
+                {personalStory.awards &&
+                    <p>{personalStory.awards.length} personal achievements</p>
                 }
             </div>
         </div >

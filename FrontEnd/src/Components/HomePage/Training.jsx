@@ -12,6 +12,8 @@ const Training = ({ trainingData }) => {
         <div className="box-component">
             <div className="training-info">
                 <h1>Your training</h1>
+                <br />
+                <br />
                 <p><strong>Cohort : </strong>{cohort}</p>
                 <p><strong>Learning Path :  </strong>{learningPath}</p>
                 <p><strong>Trainer :  </strong>{trainer}</p>
