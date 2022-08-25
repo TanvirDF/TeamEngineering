@@ -10,8 +10,8 @@ import { useParams } from 'react-router-dom';
 
 
 
-const Homepage = () => {
-    const { id } = useParams();
+const Homepage = ({ id }) => {
+
 
 
     const [profileData, setProfileData] = useState([]);
@@ -22,7 +22,7 @@ const Homepage = () => {
         getInformationData();
         getTrainingData();
         getProfileData();
-    }, []);
+    }, [id]);
 
     const getProfileData = async () => {
         try {
@@ -64,7 +64,7 @@ const Homepage = () => {
 
     return (
         <div>
-            <Profile profileData={profileData} />
+            <Profile profileData={profileData} id={id} />
             <Training trainingData={trainingData} />
             <Information informationData={informationData} />
         </div>

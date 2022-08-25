@@ -5,7 +5,7 @@ import axios from 'axios';
 import { useEffect } from 'react';
 
 
-const Profile = ({ profileData }) => {
+const Profile = ({ profileData, id }) => {
 
 
     const [personalStory, setPersonalStory] = useState([]);
@@ -13,12 +13,12 @@ const Profile = ({ profileData }) => {
 
     useEffect(() => {
         getPersonalStory();
-    }, []);
+    }, [id]);
 
 
     const getPersonalStory = async () => {
         // console.log('Hello from personal story');
-        const res = await axios.get('http://localhost:4000/personalStory/1234');
+        const res = await axios.get(`http://localhost:4000/personalStory/${id}`);
         setPersonalStory(res.data);
         // console.log(res.data);
     }
@@ -39,7 +39,7 @@ const Profile = ({ profileData }) => {
                 <div className="title">
                     <h1 >Your profile</h1>
                     <br />
-                    <button type="submit" id="edit-button"><a className="link" href="/profilepage">Edit</a></button>
+                    <button type="submit" id="edit-button"><a className="link" href="/edit">Edit</a></button>
                 </div >
                 <div className="info-boxes">
                     <p><strong>Name:  </strong>{name} </p>
