@@ -48,12 +48,12 @@ const LogIn = ({ setId }) => {
         const { email, password } = user;
         if (email && password) {
             const res = await axios.post(url, user);
-            console.log(res.data.user.userId);
+            // console.log(res.data.user.userId);
             setId(res.data.user.userId);
             if (res.data.user !== undefined) {
                 setLoggedIn(true);
             }
-            console.log(res.data.message);
+            // console.log(res.data.message);
             setUser({ email: '', password: '' });
             // console.log('hello from async method for login')
 
