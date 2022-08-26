@@ -14,12 +14,16 @@ const Homepage = ({ id }) => {
     const [profileData, setProfileData] = useState([]);
     const [trainingData, setTrainingData] = useState([]);
     const [informationData, setInformationData] = useState([]);
+    const [personalStory, setPersonalStory] = useState([]);
+
 
     useEffect(() => {
         getInformationData();
         getTrainingData();
         getProfileData();
-    }, []);
+        getPersonalStory();
+
+    }, [id]);
 
     const getProfileData = async () => {
         try {
@@ -34,10 +38,10 @@ const Homepage = ({ id }) => {
     }
     const getTrainingData = async () => {
         try {
-            console.log('Hello from training');
+            // console.log('Hello from training');
             const res = await axios.get(`http://localhost:4000/training/${id}`);
             setTrainingData(res.data)
-            console.log(res.data)
+            // console.log(res.data)
         }
         catch (e) {
             console.log(e);
@@ -56,12 +60,20 @@ const Homepage = ({ id }) => {
         }
     }
 
+
+    const getPersonalStory = async () => {
+        // console.log('Hello from personal story');
+        const res = await axios.get(`http://localhost:4000/personalStory/${id}`);
+        setPersonalStory(res.data);
+        // console.log(res.data);
+    }
+
     return (
         <div>
-            <Profile profileData={profileData} />
-            <Training trainingData={trainingData } />
-           <Information informationData={informationData} />
-  </div>
+            <Profile profileData={profileData} personalStory={personalStory} />
+            <Training trainingData={trainingData} />
+            <Information informationData={informationData} />
+        </div>
     )
 }
 

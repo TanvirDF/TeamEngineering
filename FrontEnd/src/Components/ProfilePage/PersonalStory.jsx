@@ -8,17 +8,17 @@ import '../../CSS/tables.css'
 
 
 
-const PersonalStory = ({ profileData }) => {
+const PersonalStory = ({ personalStory }) => {
 
     return (
         <div className="storybox">
             <h1 id="content">Personal Story</h1>
-            <DegreeTable degrees={profileData.degrees} />
-            <SchoolTable schooling={profileData.schooling} />
-            <WorkTable work={profileData.work} />
-            <CertificatesTable certificate={profileData.certificate} />
-            <PortfolioTable portfolio={profileData.portfolio} />
-       </div>
+            <DegreeTable degrees={personalStory.degrees} />
+            <SchoolTable schooling={personalStory.schooling} />
+            <WorkTable work={personalStory.work} />
+            <CertificatesTable certificate={personalStory.certificate} />
+            <PortfolioTable portfolio={personalStory.portfolio} />
+        </div>
 
     )
 }

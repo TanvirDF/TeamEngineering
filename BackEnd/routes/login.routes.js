@@ -48,7 +48,7 @@ router.route('/')
       if (user && password === user.password) {
         res.send({ message: `Login Success`, user });
       }
-      else if (graduate) {
+      else if (user) {
         res.send({ message: `Your password is incorrect` });
       }
       else {
