@@ -37,7 +37,7 @@ const Profile = ({ profileData }) => {
         <div className="whole-component">
             <div className="Basic-info">
                 <div className="title">
-                    <h1 >Your profile</h1>
+                    <h1 >Your Profile</h1>
                     <br />
                     <button type="submit" id="edit-button"><a className="link" href="/edit">Edit</a></button>
                 </div >

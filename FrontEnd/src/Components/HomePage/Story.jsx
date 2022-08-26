@@ -2,7 +2,7 @@ const Story = ({ personalStory }) => {
 
     return (
         <div className="quali" data-testId="story">
-            <h3>Personal story summary:</h3>
+            <h3>Personal Story Summary:</h3>
             <br />
             <div className="info-box">
                 {personalStory.degrees?.map((eachDegree, index) => (

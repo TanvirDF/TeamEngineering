@@ -63,7 +63,7 @@ const LogIn = ({ setId }) => {
     return (
         <>
             {loggedIn && <Navigate to='/profile' />}
-            <div div className='body' >
+            <div div className='loginBody' >
                 <div className='loginHolder'>
                     <h2>Digital Futures</h2>
                     <p>Login</p>

@@ -1,4 +1,4 @@
-.body {
+.loginBody {
     background-color: rgb(231, 231, 245);
     margin-top: 0;
     height: 650px;
@@ -8,16 +8,18 @@
     flex-direction: column;
 }
 
+
 .loginHolder {
     background-color: whitesmoke;
     padding-top: 100px;
-    height: 90vh;
+    height: 70vh;
     width: 32%;
     border-radius: 5px;
     border-radius: 20px;
     box-shadow: 0 0 2em rgb(143, 155, 219);
     text-align: center;
-
+    margin-top: 20px;
+    bottom: 0;
 
 }
 
