@@ -54,8 +54,6 @@ const LogIn = ({ setId }) => {
             }
             setResponseMsg(res.data.message);
             setUser({ email: '', password: '' });
-            // console.log('hello from async method for login')
-
         }
     }
 
