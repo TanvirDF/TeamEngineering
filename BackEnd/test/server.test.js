@@ -57,9 +57,6 @@ describe('testing the requests on database', () => {
             expect(res.body).to.have.property(`github`);
             expect(res.body).to.have.property(`nationality`);
         })
-
-
-
     })
 
     describe('Personal Story', () => {

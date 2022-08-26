@@ -7,7 +7,7 @@ const moduleSchema = new mongoose.Schema({
     },
     status: {
         type: String,
-        enum: ["PASSED", "FAILED", "PENDING"],
+        enum: ["PASSED", "TODO", "PENDING"],
         required: false
     }
 })
