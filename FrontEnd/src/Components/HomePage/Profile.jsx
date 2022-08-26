@@ -5,23 +5,7 @@ import axios from 'axios';
 import { useEffect } from 'react';
 
 
-const Profile = ({ profileData }) => {
-
-
-    const [personalStory, setPersonalStory] = useState([]);
-
-
-    useEffect(() => {
-        getPersonalStory();
-    }, []);
-
-
-    const getPersonalStory = async () => {
-        // console.log('Hello from personal story');
-        const res = await axios.get('http://localhost:4000/personalStory/1234');
-        setPersonalStory(res.data);
-        // console.log(res.data);
-    }
+const Profile = ({ profileData, personalStory }) => {
 
 
 

@@ -9,7 +9,7 @@ const LogIn = ({ setId }) => {
 
     const url = `http://localhost:4000/login`;
     // const [message, setMessage] = useState(<div></div>)
-    // const [responseMsg, setResponseMsg] = useState();
+    const [responseMsg, setResponseMsg] = useState();
     const [user, setUser] = useState({ email: '', password: '' });
     const [loggedIn, setLoggedIn] = useState(false);
     let navigate = useNavigate();
@@ -48,15 +48,12 @@ const LogIn = ({ setId }) => {
         const { email, password } = user;
         if (email && password) {
             const res = await axios.post(url, user);
-            // console.log(res.data.user.userId);
             setId(res.data.user.userId);
             if (res.data.user !== undefined) {
                 setLoggedIn(true);
             }
-            // console.log(res.data.message);
+            setResponseMsg(res.data.message);
             setUser({ email: '', password: '' });
-            // console.log('hello from async method for login')
-
         }
     }
 
@@ -74,7 +71,7 @@ const LogIn = ({ setId }) => {
                             <label htmlFor="password" > Password </label>
                             <input type="password" id='password' name='password' onChange={handleChange} value={user.password} required />
                         </div>
-                        {/* {responseMsg} */}
+                        {responseMsg}
                         <div className='loginBtn'>
                             <button type='submit' name='loginBtn'>Login</button>
                         </div>

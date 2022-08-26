@@ -6,25 +6,31 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 
-const ProfilePage = () => {
+const ProfilePage = ({ id }) => {
 
     const [profileData, setProfileData] = useState([]);
+    const [personalStory, setPersonalStory] = useState([]);
 
 
     useEffect(() => {
+        getPersonalStory();
         getProfileData();
-    }, []);
+    }, [id]);
 
 
+    const getPersonalStory = async () => {
+        const res = await axios.get(`http://localhost:4000/personalStory/${id}`);
+        setPersonalStory(res.data);
+        console.log(res.data);
+
+    }
     const getProfileData = async () => {
-        try {
-            const res = await axios.get('http://localhost:4000/personalStory/1234');
-            setProfileData(res.data);
-            console.log(res.data);
-        }
-        catch (e) {
-            console.log(e);
-        }
+
+        // console.log('Hello from profile');
+        const res = await axios.get(`http://localhost:4000/graduate/${id}`);
+        setProfileData(res.data);
+        console.log(res.data);
+
     }
 
 
@@ -32,8 +38,8 @@ const ProfilePage = () => {
     return (
         <div>
             {/* <ProfileCompletion /> */}
-            <EditPI />
-            <PersonalStory profileData={profileData} />
+            <EditPI profileData={profileData} id={id} />
+            <PersonalStory personalStory={personalStory} />
         </div>
     )
 }
